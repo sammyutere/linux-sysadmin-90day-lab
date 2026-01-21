@@ -1,0 +1,20 @@
+
+vagrant ssh infra-rocky -c "hostname; ip -br a; uname -a; cat /etc/os-release" \
+  >> lab/evidence/2026-01-13_day1_baseline.txt
+prod-ubuntu
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+enp0s3           UP             10.0.2.15/24 metric 100 fe80::a0:d2ff:fe64:f128/64 
+enp0s8           UP             10.168.56.10/24 fe80::a00:27ff:fe02:70c9/64 
+Linux prod-ubuntu 5.15.0-164-generic #174-Ubuntu SMP Fri Nov 14 20:25:16 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+PRETTY_NAME="Ubuntu 22.04.5 LTS"
+NAME="Ubuntu"
+VERSION_ID="22.04"
+VERSION="22.04.5 LTS (Jammy Jellyfish)"
+VERSION_CODENAME=jammy
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=jammy
