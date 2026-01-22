@@ -6,3 +6,9 @@
 - [x] infra-rocky reachable at 10.168.56.20
 - [x] Topology documented
 - [x] Baseline evidence captured
+
+## Day 2 Completed
+- [x] Ubuntu system updated
+- [x] Rocky system updated
+- [x] Baseline admin tools installed
+- [x] Evidence captured
