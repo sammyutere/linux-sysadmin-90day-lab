@@ -28,3 +28,16 @@
 
 ### Evidence
 - lab/evidence/2026-01-14_day2_updates_tools.txt
+
+## 2026-01-15 — Day 3 — SSH Hardening
+
+**Goal:** Secure SSH access using key-based authentication and least privilege.
+
+### What I did
+- Backed up SSH daemon configuration on both systems.
+- Disabled password-based SSH authentication.
+- Disabled direct root login over SSH.
+- Restarted SSH services and verified effective configuration.
+
+### Evidence
+- lab/evidence/2026-01-15_day3_ssh_hardening.txt

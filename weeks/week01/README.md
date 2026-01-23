@@ -12,3 +12,9 @@
 - [x] Rocky system updated
 - [x] Baseline admin tools installed
 - [x] Evidence captured
+
+## Day 3 Completed
+- [x] SSH password authentication disabled
+- [x] Root SSH login disabled
+- [x] SSH configuration verified
+- [x] Evidence captured
