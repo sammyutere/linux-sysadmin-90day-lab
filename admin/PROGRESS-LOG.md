@@ -2,6 +2,11 @@
 
 ## 2026-01-13 — Day 1 — Lab Bring-up & Verification
 
+### Environment Setup Note
+- Vagrantfile resides in `~/linux-labs/vagrant-lab`.
+- `VAGRANT_CWD` was set to allow Vagrant commands to be run from the
+  documentation repository without changing directories.
+
 **Goal:** Build the Vagrant + VirtualBox lab and verify basic connectivity.
 
 ### What I did
