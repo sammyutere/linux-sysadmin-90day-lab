@@ -50,3 +50,22 @@ Set Vagrant context so you can run `vagrant` commands from this documentation re
 
 ```bash
 export VAGRANT_CWD=~/linux-labs/vagrant-lab
+
+## Lab Assumptions and Constraints
+
+The following assumptions and constraints apply to all labs and documentation
+in this repository. They are explicitly documented to ensure reproducibility
+and to avoid implicit dependencies.
+
+### Host System Assumptions
+- The host system is a Unix-like OS (Linux or macOS).
+- VirtualBox and Vagrant are installed and available in the host PATH.
+- The host user has sufficient privileges to run Vagrant and manage VirtualBox VMs.
+
+### Vagrant Execution Assumptions
+- The Vagrantfile is located at: `~/linux-labs/vagrant-lab`
+- This repository contains documentation only and does not store the Vagrantfile.
+- All `vagrant` commands in this repository assume the following environment variable is set:
+
+```bash
+export VAGRANT_CWD=~/linux-labs/vagrant-lab
