@@ -49,6 +49,7 @@ Install on your host system:
 Set Vagrant context so you can run `vagrant` commands from this documentation repo:
 
 ```bash
+
 export VAGRANT_CWD=~/linux-labs/vagrant-lab
 
 ---
@@ -68,4 +69,8 @@ The following assumptions and constraints apply to all labs and documentation in
 - All `vagrant` commands in this repository assume the following environment variable is set on the host:
 
 ```bash
+
 export VAGRANT_CWD=~/linux-labs/vagrant-lab
+
+
+
