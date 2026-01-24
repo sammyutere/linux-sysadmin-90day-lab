@@ -1,15 +1,9 @@
 # Linux Sysadmin 90-Day Lab (Vagrant + VirtualBox)
 
 ## Table of Contents
-- [Motivation](#motivation)
+- [Table of Contents](#table-of-contents)
 - [Lab Setup](#lab-setup)
-- [Lab Assumptions & Constraints](#lab-assumptions--constraints)
-- [Getting Started](#getting-started)
-- [Repository Structure](#repository-structure)
-- [How Progress Is Tracked](#how-progress-is-tracked)
-- [Standards Followed](#standards-followed)
-- [Contributing](#contributing)
-- [License](#license)
+  - [Vagrant Layout](#vagrant-layout)
 
 ## Lab Setup
 
