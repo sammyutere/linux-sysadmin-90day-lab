@@ -18,3 +18,9 @@
 - [x] Root SSH login disabled
 - [x] SSH configuration verified
 - [x] Evidence captured
+
+## Day 4 Completed
+- [x] Standard health checks defined
+- [x] Health data captured for both systems
+- [x] Evidence reviewed and stored
+- [x] Evidence discipline established

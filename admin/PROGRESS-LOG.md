@@ -41,3 +41,17 @@
 
 ### Evidence
 - lab/evidence/2026-01-15_day3_ssh_hardening.txt
+
+## 2026-01-16 — Day 4 — System Health Checks & Evidence Discipline
+
+**Goal:** Establish a repeatable daily health-check and evidence-capture process.
+
+### What I did
+- Defined a standard system health checklist.
+- Captured health data from both systems.
+- Stored raw command output as versioned evidence.
+- Reviewed system state for anomalies.
+
+### Evidence
+- lab/evidence/2026-01-16_day4_prod_health.txt
+- lab/evidence/2026-01-16_day4_infra_health.txt
