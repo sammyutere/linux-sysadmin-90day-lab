@@ -24,3 +24,9 @@
 - [x] Health data captured for both systems
 - [x] Evidence reviewed and stored
 - [x] Evidence discipline established
+
+## Day 5 Completed
+- [x] VMs intentionally destroyed
+- [x] Lab rebuilt from configuration
+- [x] Networking and access verified
+- [x] Rebuild evidence captured

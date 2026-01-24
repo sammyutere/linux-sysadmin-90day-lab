@@ -1,0 +1,10 @@
+prod-ubuntu
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+enp0s3           UP             10.0.2.15/24 metric 100 fe80::a0:d2ff:fe64:f128/64 
+enp0s8           UP             10.168.56.10/24 fe80::a00:27ff:fe9d:da2d/64 
+Linux prod-ubuntu 5.15.0-164-generic #174-Ubuntu SMP Fri Nov 14 20:25:16 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+infra-rocky
+[36mlo               [0mUNKNOWN        [35m127.0.0.1[0m/8 [34m::1[0m/128 
+[36menp0s3           [0m[32mUP             [0m[35m10.0.2.15[0m/24 [34mfe80::a00:27ff:fe6f:16b4[0m/64 
+[36menp0s8           [0m[32mUP             [0m[35m10.168.56.20[0m/24 [34mfe80::a00:27ff:fefb:2df1[0m/64 
+Linux infra-rocky 5.14.0-570.52.1.el9_6.x86_64 #1 SMP PREEMPT_DYNAMIC Wed Oct 15 13:59:22 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux

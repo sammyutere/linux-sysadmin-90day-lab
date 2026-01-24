@@ -55,3 +55,16 @@
 ### Evidence
 - lab/evidence/2026-01-16_day4_prod_health.txt
 - lab/evidence/2026-01-16_day4_infra_health.txt
+
+## 2026-01-17 — Day 5 — Rebuild Test & Reproducibility
+
+**Goal:** Validate that the lab environment can be rebuilt from configuration alone.
+
+### What I did
+- Destroyed both Vagrant-managed virtual machines.
+- Rebuilt the lab using `vagrant up`.
+- Verified hostnames, IP addresses, and kernel availability.
+- Confirmed no undocumented manual steps were required.
+
+### Evidence
+- lab/evidence/2026-01-17_day5_rebuild_verification.txt
