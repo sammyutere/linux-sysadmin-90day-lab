@@ -52,7 +52,9 @@ Set Vagrant context so you can run `vagrant` commands from this documentation re
 
 export VAGRANT_CWD=~/linux-labs/vagrant-lab
 
-\
+```
+
+
 ---
 
 ## Lab Assumptions and Constraints
