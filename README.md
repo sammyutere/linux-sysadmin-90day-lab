@@ -34,6 +34,24 @@ All work is performed in a controlled local lab using Vagrant and VirtualBox.
 
 ## Repository Structure
 
+## Lab Setup
+
+### Vagrant Layout
+
+- Vagrantfile location: `~/linux-labs/vagrant-lab`
+- Documentation repository: `~/linux-labs/linux-sysadmin-90day-lab`
+
+To allow Vagrant commands to be executed from the documentation repository
+without changing directories, the following environment variable is set
+on the host system:
+
+```bash
+export VAGRANT_CWD=~/linux-labs/vagrant-lab
+```
+
+This ensures all `vagrant` commands (e.g. `vagrant ssh`, `vagrant status`)
+target the correct Vagrantfile during lab execution and evidence capture.
+
 | Path | Purpose |
 |-----|---------|
 | `admin/` | Planning, progress logs, templates |
