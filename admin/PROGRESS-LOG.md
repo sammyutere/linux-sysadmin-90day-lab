@@ -87,3 +87,13 @@ Target state achieved on both systems:
 
 Evidence:
 - lab/evidence/2026-01-18_day6_ssh_remediation.txt
+
+### SSH Hardening — Permanent Drift Prevention
+
+- Implemented SSH hardening using `/etc/ssh/sshd_config.d/99-hardening.conf`.
+- Enforced `PermitRootLogin no` and `PasswordAuthentication no` as final overrides.
+- Avoided modification of vendor-managed configuration files.
+- Verified effective runtime configuration on Ubuntu and Rocky Linux.
+
+Evidence:
+- lab/evidence/2026-01-18_day6_ssh_permanent_hardening.txt

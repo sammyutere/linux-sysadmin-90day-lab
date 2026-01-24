@@ -1,0 +1,4 @@
+permitrootlogin no
+passwordauthentication no
+permitrootlogin no
+passwordauthentication no

@@ -1,0 +1,10 @@
+2026-01-24T03:08:14+00:00
+prod-ubuntu
+ 03:08:14 up  1:13,  1 user,  load average: 0.00, 0.02, 0.00
+[0m[0;4m [0m[0m[0;4m UNIT[0m[0m[0;4m LOAD[0m[0m[0;4m ACTIVE[0m[0m[0;4m SUB[0m[0m[0;4m DESCRIPTION[0m
+0 loaded units listed.
+2026-01-24T03:08:42+00:00
+infra-rocky
+ 03:08:42 up  1:11,  1 user,  load average: 0.00, 0.00, 0.00
+[0m[0;4m [0m[0m[0;4m UNIT[0m[0m[0;4m LOAD[0m[0m[0;4m ACTIVE[0m[0m[0;4m SUB[0m[0m[0;4m DESCRIPTION[0m
+0 loaded units listed.
