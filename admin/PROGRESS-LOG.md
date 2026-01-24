@@ -68,3 +68,22 @@
 
 ### Evidence
 - lab/evidence/2026-01-17_day5_rebuild_verification.txt
+
+### SSH Configuration Drift Remediation (Day 6)
+
+**prod-ubuntu (Ubuntu):**
+- Detected `PermitRootLogin without-password`.
+- Enforced explicit `PermitRootLogin no` in `/etc/ssh/sshd_config`.
+- Restarted SSH and verified effective configuration.
+
+**infra-rocky (Rocky Linux):**
+- Detected `PasswordAuthentication yes` due to vendor drop-in file.
+- Implemented hardened override in `/etc/ssh/sshd_config.d/99-hardening.conf`.
+- Restarted SSH and verified effective configuration.
+
+Target state achieved on both systems:
+- `PermitRootLogin no`
+- `PasswordAuthentication no`
+
+Evidence:
+- lab/evidence/2026-01-18_day6_ssh_remediation.txt
