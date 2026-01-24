@@ -34,6 +34,22 @@ All work is performed in a controlled local lab using Vagrant and VirtualBox.
 
 ## Repository Structure
 
+This repository is organized to separate **operational documentation**,
+**raw evidence**, and **execution checklists**. This structure mirrors
+how production teams document systems and incidents.
+
+| Path | Purpose |
+|------|--------|
+| `admin/` | Planning documents, progress logs, and environment notes |
+| `lab/evidence/` | Raw command output used as verification and proof |
+| `lab/runbooks/` | Operational runbooks for common procedures |
+| `lab/incidents/` | Incident reports, RCAs, and postmortems |
+| `lab/ansible/` | Automation playbooks and configuration enforcement |
+| `weeks/` | Week-by-week execution plans and completion tracking |
+
+Start with `README.md`, then review `admin/PROGRESS-LOG.md` for daily activity,
+and `weeks/` for structured execution and progress.
+
 ## Lab Setup
 
 ### Vagrant Layout
