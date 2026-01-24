@@ -1,0 +1,22 @@
+prod-ubuntu
+ 03:54:32 up  2:00,  1 user,  load average: 0.06, 0.03, 0.00
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           197M  968K  196M   1% /run
+/dev/sda1        39G  1.6G   38G   5% /
+tmpfs           982M     0  982M   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+vagrant         239G  116G  123G  49% /vagrant
+tmpfs           197M  4.0K  197M   1% /run/user/1000
+permitrootlogin no
+passwordauthentication no
+infra-rocky
+ 03:56:30 up  1:59,  1 user,  load average: 0.02, 0.01, 0.00
+Filesystem      Size  Used Avail Use% Mounted on
+devtmpfs        4.0M     0  4.0M   0% /dev
+tmpfs           982M     0  982M   0% /dev/shm
+tmpfs           393M   11M  383M   3% /run
+/dev/sda2        61G  2.0G   59G   4% /
+vagrant         239G  116G  123G  49% /vagrant
+tmpfs           197M  4.0K  197M   1% /run/user/1000
+permitrootlogin no
+passwordauthentication no

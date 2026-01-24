@@ -36,3 +36,17 @@
 - [x] System health re-verified
 - [x] Documentation corrected where necessary
 - [x] Lab stabilized for next phase
+
+## Week 1 Sign-off
+
+Week 1 is complete and signed off.
+
+### Validation Summary
+- Lab rebuilt successfully from configuration
+- Systems patched and stable
+- SSH access hardened and drift-resistant
+- Evidence discipline established
+- Documentation reviewed and corrected
+
+### Readiness Status
+- Ready to proceed to Week 2 (Monitoring & Failure Drills)

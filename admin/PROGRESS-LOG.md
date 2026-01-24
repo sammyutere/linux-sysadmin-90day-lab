@@ -110,3 +110,16 @@ Evidence:
 
 ### Evidence
 - lab/evidence/2026-01-18_day6_remediation_check.txt
+
+## 2026-01-19 — Day 7 — Week 1 Sign-off & Readiness Check
+
+**Goal:** Formally validate completion of Week 1 and establish readiness baseline.
+
+### What I did
+- Verified VM state and system health.
+- Confirmed permanent SSH hardening on both systems.
+- Captured Week 1 readiness evidence.
+- Signed off Week 1 documentation.
+
+### Evidence
+- lab/evidence/2026-01-19_week1_readiness.txt
