@@ -97,3 +97,16 @@ Evidence:
 
 Evidence:
 - lab/evidence/2026-01-18_day6_ssh_permanent_hardening.txt
+
+## 2026-01-18 — Day 6 — Buffer & Remediation
+
+**Goal:** Review, stabilize, and correct any issues from Week 1.
+
+### What I did
+- Reviewed lab structure, evidence, and documentation.
+- Re-verified system health and SSH hardening.
+- Corrected minor documentation issues where needed.
+- Confirmed systems were stable and ready for Week 2.
+
+### Evidence
+- lab/evidence/2026-01-18_day6_remediation_check.txt
