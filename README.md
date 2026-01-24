@@ -52,6 +52,42 @@ and `weeks/` for structured execution and progress.
 
 ## Lab Setup
 
+## Lab Assumptions & Constraints
+
+The following assumptions and constraints apply to all labs and documentation
+in this repository. They are intentionally documented to ensure reproducibility
+and to avoid implicit dependencies.
+
+### Host System Assumptions
+- The host system is a Unix-like OS (Linux or macOS).
+- VirtualBox and Vagrant are installed and available in the host PATH.
+- The host user has passwordless or cached sudo access where required.
+
+### Vagrant Layout Assumptions
+- The Vagrantfile is located at: `~/linux-labs/vagrant-lab`
+- This repository (`linux-sysadmin-90day-lab`) contains **documentation only**.
+
+```bash
+export VAGRANT_CWD=~/linux-labs/vagrant-lab
+```
+
+All `vagrant` commands referenced in this repository assume this variable is set.
+
+### Network Assumptions
+- Host-only networking is used.
+- Static IPs:
+  - prod-ubuntu: 10.168.56.10
+  - infra-rocky: 10.168.56.20
+
+### Access & Security Constraints
+- SSH key-based access only.
+- PasswordAuthentication disabled.
+- PermitRootLogin disabled.
+
+### Scope Constraints
+- Local lab only.
+- Failures are remediated, not bypassed.
+
 ### Vagrant Layout
 
 - Vagrantfile location: `~/linux-labs/vagrant-lab`
