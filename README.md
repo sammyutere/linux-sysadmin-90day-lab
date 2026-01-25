@@ -54,6 +54,26 @@ export VAGRANT_CWD=~/linux-labs/vagrant-lab
 
 ```
 
+Bring up the lab:
+
+```bash
+vagrant up    
+```
+
+Check VM status:
+
+```bash
+vagrant status
+```
+
+Quick verification:
+
+```bash
+
+vagrant ssh prod-ubuntu -c "hostname; ip -br a; cat /etc/os-release"
+vagrant ssh infra-rocky -c "hostname; ip -br a; cat /etc/os-release"
+
+```
 
 ---
 
@@ -75,5 +95,6 @@ The following assumptions and constraints apply to all labs and documentation in
 
 export VAGRANT_CWD=~/linux-labs/vagrant-lab
 
+```
 
 
