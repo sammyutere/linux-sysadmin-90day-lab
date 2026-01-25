@@ -194,3 +194,11 @@ vagrant ssh infra-rocky -c "hostname; ip -br a" >> lab/evidence/baseline_example
 - Evidence: lab/evidence/
 - Runbooks: lab/runbooks/
 - Incident artifacts: lab/incidents/
+
+## Standards Followed
+
+- Fix issues via remediation with verification output (no “reinstall to fix”).
+- Capture proof for changes and validations in lab/evidence/.
+- Document operational procedures as runbooks.
+- Document incidents with root cause analysis and corrective actions.
+- Prefer automation for repeatability where appropriate.
