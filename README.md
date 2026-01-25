@@ -137,7 +137,36 @@ git clone https://github.com/sammyutere/linux-sysadmin-90day-lab.git
 cd linux-sysadmin-90day-lab
 
 ```
+- Set Vagrant context:
 
+```bash
 
+export VAGRANT_CWD=~/linux-labs/vagrant-lab
+
+```
+
+- Bring up the lab:
+
+```bash
+vagrant up
+
+```
+
+- Run a quick verification:
+
+```bash
+vagrant ssh prod-ubuntu -c "hostname; ip -br a; cat /etc/os-release"
+vagrant ssh infra-rocky -c "hostname; ip -br a; cat /etc/os-release"
+
+```
+
+- Capture evidence (example):
+
+```bash
+mkdir -p lab/evidence
+vagrant ssh prod-ubuntu -c "hostname; ip -br a" >  lab/evidence/baseline_example.txt
+vagrant ssh infra-rocky -c "hostname; ip -br a" >> lab/evidence/baseline_example.txt
+
+```
 
 
