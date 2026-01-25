@@ -202,3 +202,11 @@ vagrant ssh infra-rocky -c "hostname; ip -br a" >> lab/evidence/baseline_example
 - Document operational procedures as runbooks.
 - Document incidents with root cause analysis and corrective actions.
 - Prefer automation for repeatability where appropriate.
+
+## Contributing
+
+Suggestions are welcome. Open an issue describing the change or submit a pull request with clear validation notes.
+
+## License
+
+MIT License. See LICENSE.
