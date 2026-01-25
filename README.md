@@ -126,3 +126,18 @@ export VAGRANT_CWD=~/linux-labs/vagrant-lab
 
 - Rebuilds must be possible using documentation and configuration alone.
 
+
+## Getting Started
+
+- Clone the repository:
+
+```bash
+
+git clone https://github.com/sammyutere/linux-sysadmin-90day-lab.git
+cd linux-sysadmin-90day-lab
+
+```
+
+
+
+
