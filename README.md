@@ -96,5 +96,33 @@ The following assumptions and constraints apply to all labs and documentation in
 export VAGRANT_CWD=~/linux-labs/vagrant-lab
 
 ```
+### Network Assumptions
 
+- Host-only networking is used.
+
+- Static IP addresses are assigned:
+
+-- prod-ubuntu: 10.168.56.10
+
+-- infra-rocky: 10.168.56.20
+
+- No DHCP or external network dependencies are assumed.
+
+### Access and Security Constraints
+
+- SSH access is key-based only.
+
+- PasswordAuthentication is disabled.
+
+- PermitRootLogin is disabled.
+
+- SSH hardening is enforced using sshd_config.d/ drop-in configuration to prevent drift.
+
+### Scope Constraints
+
+- This lab is intentionally local-only unless explicitly extended.
+
+- Failures must be remediated, not bypassed.
+
+- Rebuilds must be possible using documentation and configuration alone.
 
