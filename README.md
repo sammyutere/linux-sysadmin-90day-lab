@@ -187,4 +187,10 @@ vagrant ssh infra-rocky -c "hostname; ip -br a" >> lab/evidence/baseline_example
 - Use weeks/ for structured execution and completion tracking.
 - Store verification output in lab/evidence/.
 
+## How Progress Is Tracked
 
+- Daily activity: admin/PROGRESS-LOG.md
+- Weekly checklists: weeks/
+- Evidence: lab/evidence/
+- Runbooks: lab/runbooks/
+- Incident artifacts: lab/incidents/
