@@ -129,7 +129,7 @@ export VAGRANT_CWD=~/linux-labs/vagrant-lab
 
 ## Getting Started
 
-- Clone the repository:
+Clone the repository:
 
 ```bash
 
@@ -137,7 +137,7 @@ git clone https://github.com/sammyutere/linux-sysadmin-90day-lab.git
 cd linux-sysadmin-90day-lab
 
 ```
-- Set Vagrant context:
+Set Vagrant context:
 
 ```bash
 
@@ -145,14 +145,14 @@ export VAGRANT_CWD=~/linux-labs/vagrant-lab
 
 ```
 
-- Bring up the lab:
+Bring up the lab:
 
 ```bash
 vagrant up
 
 ```
 
-- Run a quick verification:
+Run a quick verification:
 
 ```bash
 vagrant ssh prod-ubuntu -c "hostname; ip -br a; cat /etc/os-release"
@@ -160,7 +160,7 @@ vagrant ssh infra-rocky -c "hostname; ip -br a; cat /etc/os-release"
 
 ```
 
-- Capture evidence (example):
+Capture evidence (example):
 
 ```bash
 mkdir -p lab/evidence
@@ -168,5 +168,23 @@ vagrant ssh prod-ubuntu -c "hostname; ip -br a" >  lab/evidence/baseline_example
 vagrant ssh infra-rocky -c "hostname; ip -br a" >> lab/evidence/baseline_example.txt
 
 ```
+
+## Repository Structure
+
+| Path             | Purpose                                     |
+| ---------------- | ------------------------------------------- |
+| `README.md`      | Overview, setup, and navigation             |
+| `admin/`         | Progress logs, environment notes, templates |
+| `lab/evidence/`  | Raw verification output (proof)             |
+| `lab/runbooks/`  | Operational runbooks                        |
+| `lab/incidents/` | Incident reports, RCAs, postmortems         |
+| `lab/ansible/`   | Automation playbooks and enforcement        |
+| `weeks/`         | Week-by-week execution plans and checklists |
+
+### Recommended navigation:
+
+- Start with admin/PROGRESS-LOG.md for daily activity.
+- Use weeks/ for structured execution and completion tracking.
+- Store verification output in lab/evidence/.
 
 
