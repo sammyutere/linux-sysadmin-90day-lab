@@ -102,9 +102,9 @@ export VAGRANT_CWD=~/linux-labs/vagrant-lab
 
 - Static IP addresses are assigned:
 
--- prod-ubuntu: 10.168.56.10
+     -  prod-ubuntu: 10.168.56.10
 
--- infra-rocky: 10.168.56.20
+     -  infra-rocky: 10.168.56.20
 
 - No DHCP or external network dependencies are assumed.
 
