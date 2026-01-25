@@ -1,0 +1,18 @@
+# OS / editor
+.DS_Store
+*.swp
+*.swo
+.vscode/
+
+# Vagrant/VirtualBox artifacts
+.vagrant/
+*.box
+
+# Keys / secrets
+*.pem
+*.key
+id_rsa
+id_rsa.pub
+
+# Logs
+*.log
