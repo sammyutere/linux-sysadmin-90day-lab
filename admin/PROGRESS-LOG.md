@@ -159,3 +159,7 @@ Evidence:
 - node_exporter shows `preset: disabled` on infra-rocky.
 - Service is explicitly enabled and running.
 - Preset reflects vendor default policy and does not affect service startup.
+
+### Snapshot Checkpoint
+- Snapshot: pre-monitoring-drills
+- Purpose: Preserve verified monitoring baseline before failure drills.
