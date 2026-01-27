@@ -1,0 +1,9 @@
+[0;1;32m●[0m node_exporter.service - Prometheus Node Exporter
+     Loaded: loaded (]8;;file://prod-ubuntu/etc/systemd/system/node_exporter.service/etc/systemd/system/node_exporter.service]8;;; enabled; vendor preset: enabled)
+     Active: [0;1;32mactive (running)[0m since Tue 2026-01-27 19:20:42 UTC; 1h 13min ago
+   Main PID: 2168 (node_exporter)
+      Tasks: 4 (limit: 2307)
+     Memory: 6.5M
+        CPU: 243ms
+     CGroup: /system.slice/node_exporter.service
+             └─2168 /usr/local/bin/node_exporter

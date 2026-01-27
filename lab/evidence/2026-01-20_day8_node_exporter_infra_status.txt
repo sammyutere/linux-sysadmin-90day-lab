@@ -1,0 +1,9 @@
+[0;1;32m●[0m node_exporter.service - Prometheus Node Exporter
+     Loaded: loaded (]8;;file://infra-rocky/etc/systemd/system/node_exporter.service/etc/systemd/system/node_exporter.service]8;;; [0;1;32menabled[0m; preset: [0;1;38;5;185mdisabled[0m)
+     Active: [0;1;32mactive (running)[0m since Tue 2026-01-27 19:22:52 UTC; 20min ago
+   Main PID: 6236 (node_exporter)
+      Tasks: 4 (limit: 10668)
+     Memory: 13.6M (peak: 15.5M)
+        CPU: 155ms
+     CGroup: /system.slice/node_exporter.service
+             └─[0;38;5;245m6236 /usr/local/bin/node_exporter[0m

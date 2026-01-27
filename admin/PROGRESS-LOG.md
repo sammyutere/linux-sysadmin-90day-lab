@@ -139,3 +139,18 @@ Evidence:
 - Documented snapshot policy and naming conventions in root README.
 - Clarified snapshots as rollback checkpoints, not rebuild substitutes.
 
+
+## 2026-01-20 — Day 8 — Monitoring Instrumentation (node_exporter)
+
+### Summary
+- Installed node_exporter on prod-ubuntu and infra-rocky.
+- Resolved invalid tarball download caused by GitHub "latest" redirect.
+- Standardized downloads using pinned release URLs and fail-fast curl.
+- Opened TCP/9100 on Rocky Linux (firewalld).
+- Verified metrics endpoints reachable from host.
+
+### Evidence
+- lab/evidence/2026-01-20_day8_metrics_prod_head.txt
+- lab/evidence/2026-01-20_day8_metrics_infra_head.txt
+- lab/evidence/2026-01-20_day8_node_exporter_prod_status.txt
+- lab/evidence/2026-01-20_day8_node_exporter_infra_status.txt
