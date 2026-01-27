@@ -134,7 +134,7 @@ Evidence:
 **Goal:** Defind snapshot checkpoints and policy.
 
 ### What I did 
-— Snapshot Checkpoints Defined
+- Snapshot Checkpoints Defined
 - Defined milestone-based snapshot strategy for Week 2+.
 - Documented snapshot policy and naming conventions in root README.
 - Clarified snapshots as rollback checkpoints, not rebuild substitutes.
