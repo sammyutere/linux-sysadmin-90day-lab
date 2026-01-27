@@ -128,3 +128,14 @@ Evidence:
 
 ### Evidence
 - lab/evidence/2026-01-19_week1_readiness.txt
+
+## 2026-01-20 — Day 7(Extended) — Snapshot Checkpoint & Policy
+
+**Goal:** Defind snapshot checkpoints and policy.
+
+### What I did 
+— Snapshot Checkpoints Defined
+- Defined milestone-based snapshot strategy for Week 2+.
+- Documented snapshot policy and naming conventions in root README.
+- Clarified snapshots as rollback checkpoints, not rebuild substitutes.
+
