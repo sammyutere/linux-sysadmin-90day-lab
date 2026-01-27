@@ -41,6 +41,46 @@ documented using production-style artifacts.
 
 ---
 
+## VM Snapshots & Recovery
+
+This lab uses VirtualBox snapshots (via Vagrant) to preserve known-good system states
+and avoid unnecessary reconfiguration after host restarts.
+
+### Snapshot Policy
+- Snapshots are taken only after documentation and evidence are complete.
+- Each snapshot is named after a milestone (e.g., `week1-baseline`).
+- Snapshots are used for rollback and recovery, not as a substitute for documentation.
+
+### Create Snapshot
+```bash
+export VAGRANT_CWD=~/linux-labs/vagrant-lab
+vagrant halt
+vagrant snapshot save week1-baseline
+```
+
+### Snapshot Checkpoints
+Snapshots are taken at defined milestones (end of weeks or major phases),
+not on every lab day.
+
+Examples:
+- `week1-baseline` — hardened and verified foundation
+- `pre-monitoring-drills` — before failure testing
+- `post-backup-verified` — after successful restore testing
+- `golden-lab` — final completed environment
+
+Snapshot checkpoints are explicitly noted at the end of applicable lab days.
+
+
+| Snapshot Name          | Purpose                     |
+| ---------------------- | --------------------------- |
+| `week1-baseline`       | Hardened, stable foundation |
+| `pre-day10-monitoring` | Before monitoring stack     |
+| `pre-failure-drills`   | Before chaos testing        |
+| `pre-backup-labs`      | Before backup/restore       |
+| `golden-lab`           | Fully completed lab         |
+
+---
+
 ## Tools Used
 
 - VirtualBox
@@ -100,7 +140,7 @@ vagrant ssh prod-ubuntu -c "hostname; ip -br a; cat /etc/os-release"
 vagrant ssh infra-rocky -c "hostname; ip -br a; cat /etc/os-release"
 ```
 
-apture evidence (example):
+Capture evidence (example):
 
 ```bash
 mkdir -p lab/evidence
