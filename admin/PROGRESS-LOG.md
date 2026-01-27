@@ -154,3 +154,8 @@ Evidence:
 - lab/evidence/2026-01-20_day8_metrics_infra_head.txt
 - lab/evidence/2026-01-20_day8_node_exporter_prod_status.txt
 - lab/evidence/2026-01-20_day8_node_exporter_infra_status.txt
+
+### Day 8 Note — systemd Preset on Rocky Linux
+- node_exporter shows `preset: disabled` on infra-rocky.
+- Service is explicitly enabled and running.
+- Preset reflects vendor default policy and does not affect service startup.
