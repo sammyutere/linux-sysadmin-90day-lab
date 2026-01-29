@@ -182,9 +182,25 @@ Evidence:
 - Practiced minimal, ordered checks to avoid guesswork.
 - Restored all systems to healthy state.
 
-### Evidence
+
+### Evidence — Final Restored State
+
+**infra-rocky**
+- `node_exporter` service is loaded, explicitly enabled, and running under systemd.
+- Service reports `preset: disabled`, which reflects Rocky Linux vendor preset policy and does not affect startup.
+- Process is listening on TCP port 9100 on all interfaces.
+- Metrics endpoint successfully returns Prometheus-formatted output from the host.
+
+Evidence file:
 - lab/evidence/2026-01-21_day9_failure_detection_infra.txt
+
+**prod-ubuntu**
+- Metrics endpoint reachable and returning expected Prometheus output.
+- No configuration changes required during failure detection exercises.
+
+Evidence file:
 - lab/evidence/2026-01-21_day9_baseline_prod_metrics.txt
+
 
 ### Day 9 Note — Post-drill Verification
 - Observed empty output from metrics verification command.
