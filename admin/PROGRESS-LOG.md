@@ -185,3 +185,8 @@ Evidence:
 ### Evidence
 - lab/evidence/2026-01-21_day9_failure_detection_infra.txt
 - lab/evidence/2026-01-21_day9_baseline_prod_metrics.txt
+
+### Day 9 Note — Post-drill Verification
+- Observed empty output from metrics verification command.
+- Confirmed exporter was not listening on expected port after drill.
+- Restored correct listen address and verified metrics output.
