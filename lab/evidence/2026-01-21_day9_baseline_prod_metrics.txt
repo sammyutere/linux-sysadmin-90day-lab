@@ -1,0 +1,10 @@
+# HELP go_gc_duration_seconds A summary of the pause duration of garbage collection cycles.
+# TYPE go_gc_duration_seconds summary
+go_gc_duration_seconds{quantile="0"} 2.7921e-05
+go_gc_duration_seconds{quantile="0.25"} 4.1891e-05
+go_gc_duration_seconds{quantile="0.5"} 4.7013e-05
+go_gc_duration_seconds{quantile="0.75"} 6.1667e-05
+go_gc_duration_seconds{quantile="1"} 0.000383414
+go_gc_duration_seconds_sum 0.001032117
+go_gc_duration_seconds_count 14
+# HELP go_goroutines Number of goroutines that currently exist.

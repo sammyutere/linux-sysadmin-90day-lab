@@ -163,3 +163,25 @@ Evidence:
 ### Snapshot Checkpoint
 - Snapshot: pre-monitoring-drills
 - Purpose: Preserve verified monitoring baseline before failure drills.
+
+## 2026-01-21 — Day 9 — Failure Detection Practices
+
+### Scenarios Tested
+1. Exporter service stopped
+2. Firewall blocking metrics
+3. Exporter listening on wrong port
+
+### Detection Order Practiced
+1. Host curl check
+2. Service state
+3. Local port binding
+4. Firewall rules
+
+### Outcome
+- Confirmed each failure mode produces distinct symptoms.
+- Practiced minimal, ordered checks to avoid guesswork.
+- Restored all systems to healthy state.
+
+### Evidence
+- lab/evidence/2026-01-21_day9_failure_detection_infra.txt
+- lab/evidence/2026-01-21_day9_baseline_prod_metrics.txt
