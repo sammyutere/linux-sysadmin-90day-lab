@@ -235,3 +235,7 @@ Command used:
 
 - This step is required for successful lab replication on Rocky/RHEL systems.
 
+
+### Snapshot Checkpoint
+- Snapshot: post-monitoring-baseline
+- Purpose: Preserve verified monitoring state after failure drills.
