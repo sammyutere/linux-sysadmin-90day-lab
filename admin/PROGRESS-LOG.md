@@ -194,6 +194,17 @@ Evidence:
 Evidence file:
 - lab/evidence/2026-01-21_day9_failure_detection_infra.txt
 
+**infra-rocky**
+- `node_exporter` service is loaded, explicitly enabled, and running under systemd.
+- Service reports `preset: disabled`, which reflects Rocky Linux vendor preset policy and does not affect startup.
+- Exporter is listening on TCP port 9100.
+- `firewalld` required an explicit rule to allow inbound TCP/9100.
+- Metrics endpoint successfully returns Prometheus-formatted output from the host after firewall rule was applied.
+
+Evidence file:
+- lab/evidence/2026-01-21_day9_failure_detection_infra.txt
+
+
 **prod-ubuntu**
 - Metrics endpoint reachable and returning expected Prometheus output.
 - No configuration changes required during failure detection exercises.
@@ -206,3 +217,21 @@ Evidence file:
 - Observed empty output from metrics verification command.
 - Confirmed exporter was not listening on expected port after drill.
 - Restored correct listen address and verified metrics output.
+
+### Day 9 Note — Rocky Linux Firewall Requirement
+
+- Observed `connection refused` when querying `infra-rocky` metrics from the host,
+  even though `node_exporter` was running and listening on TCP/9100.
+- Root cause identified as `firewalld` blocking inbound traffic by default on Rocky Linux.
+- Permanently opened TCP/9100 using `firewall-cmd`.
+- Metrics endpoint became reachable immediately after reload.
+
+Command used:
+
+```bash
+ sudo firewall-cmd --add-port=9100/tcp --permanent
+ sudo firewall-cmd --reload
+ ```
+
+- This step is required for successful lab replication on Rocky/RHEL systems.
+
