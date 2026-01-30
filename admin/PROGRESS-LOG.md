@@ -239,3 +239,19 @@ Command used:
 ### Snapshot Checkpoint
 - Snapshot: post-monitoring-baseline
 - Purpose: Preserve verified monitoring state after failure drills.
+
+## 2026-01-22 — Day 10 — Monitoring Runbook Creation
+
+### Goal
+Convert monitoring failure drills into a formal runbook.
+
+### What I did
+- Created a node_exporter monitoring runbook.
+- Documented detection order: service → port → firewall → network.
+- Included Rocky Linux firewalld requirement and systemd preset behavior.
+- Validated runbook against both prod-ubuntu and infra-rocky.
+
+### Evidence
+- runbooks/monitoring-node-exporter.md
+- lab/evidence/2026-01-22_day10_runbook_validation_infra.txt
+- lab/evidence/2026-01-22_day10_runbook_validation_prod.txt
