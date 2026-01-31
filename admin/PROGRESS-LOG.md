@@ -280,3 +280,7 @@ Implement a minimal, correct alerting pipeline and define paging philosophy.
 - lab/evidence/2026-01-23_day11_alertmanager_alerts.json
 - lab/evidence/2026-01-23_day11_prometheus_alerts_resolved.json
 
+
+### Snapshot Checkpoint
+- Snapshot: post-alerting-corrected
+- Purpose: Preserve verified alerting pipeline after Docker networking fix.
