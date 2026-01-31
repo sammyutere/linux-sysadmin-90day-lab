@@ -255,3 +255,28 @@ Convert monitoring failure drills into a formal runbook.
 - runbooks/monitoring-node-exporter.md
 - lab/evidence/2026-01-22_day10_runbook_validation_infra.txt
 - lab/evidence/2026-01-22_day10_runbook_validation_prod.txt
+
+## 2026-01-23 — Day 11 — Alerting Concepts (Page vs Ticket vs Info)
+
+### Goal
+Implement a minimal, correct alerting pipeline and define paging philosophy.
+
+### What I did
+- Defined alert severities based on operational impact (page, ticket, info).
+- Created Prometheus alert rules aligned to observed failure modes.
+- Deployed Prometheus and Alertmanager as Docker containers on a shared network.
+- Corrected Alertmanager discovery by referencing container name instead of localhost.
+- Validated end-to-end alert flow using a controlled node_exporter outage and recovery.
+
+### Key Fix
+- Initial configuration incorrectly referenced `localhost:9093` from inside Prometheus.
+- Resolved by attaching Prometheus and Alertmanager to the same Docker network and
+  referencing Alertmanager by container name.
+
+### Evidence
+- lab/evidence/2026-01-23_day11_prometheus_alertmanagers.json
+- lab/evidence/2026-01-23_day11_prometheus_rules.json
+- lab/evidence/2026-01-23_day11_prometheus_alerts_firing.json
+- lab/evidence/2026-01-23_day11_alertmanager_alerts.json
+- lab/evidence/2026-01-23_day11_prometheus_alerts_resolved.json
+

@@ -8,6 +8,26 @@ Applies to:
 - Ubuntu (prod-ubuntu)
 - Rocky Linux (infra-rocky)
 
+## Paging Philosophy
+
+Alerts are classified by required human response:
+
+### Page
+- Active or imminent user impact
+- No automated mitigation available
+- Immediate, clear action exists
+
+### Ticket
+- Degraded performance without user impact
+- Investigation required during business hours
+
+### Info
+- State changes or context (e.g., reboot detected)
+- No immediate action required
+
+This runbook focuses on PAGE-level alerts only.
+
+
 ---
 
 ## Symptom 1 — Metrics endpoint unreachable
