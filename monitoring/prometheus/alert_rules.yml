@@ -1,0 +1,42 @@
+groups:
+  - name: node-basics
+    rules:
+      # PAGE: Node exporter missing (proxy for node unreachable)
+      - alert: NodeExporterDown
+        expr: up{job="node"} == 0
+        for: 2m
+        labels:
+          severity: page
+        annotations:
+          summary: "Node exporter down on {{ $labels.instance }}"
+          description: "Prometheus cannot scrape node_exporter for 2m. Investigate node reachability, service, port, firewall."
+
+      # PAGE: Disk will be full soon (actionable, predictive)
+      - alert: DiskWillFillSoon
+        expr: (node_filesystem_avail_bytes{fstype!~"tmpfs|overlay"} / node_filesystem_size_bytes{fstype!~"tmpfs|overlay"}) < 0.10
+        for: 10m
+        labels:
+          severity: page
+        annotations:
+          summary: "Disk space critical on {{ $labels.instance }} ({{ $labels.mountpoint }})"
+          description: "Less than 10% disk free for 10m. Investigate largest directories/files, cleanup, or expand disk."
+
+      # TICKET: CPU high (not paging unless sustained and impactful)
+      - alert: HighCpuUsage
+        expr: 100 - (avg by (instance) (rate(node_cpu_seconds_total{mode="idle"}[5m])) * 100) > 85
+        for: 15m
+        labels:
+          severity: ticket
+        annotations:
+          summary: "High CPU on {{ $labels.instance }}"
+          description: "CPU >85% for 15m. Check top processes, load, and whether there is user impact."
+
+      # INFO: Reboot detected (useful, not paging)
+      - alert: NodeRebooted
+        expr: changes(node_boot_time_seconds[15m]) > 0
+        for: 0m
+        labels:
+          severity: info
+        annotations:
+          summary: "Node reboot detected on {{ $labels.instance }}"
+          description: "node_boot_time_seconds changed within 15m. Confirm change record and expected reboot."

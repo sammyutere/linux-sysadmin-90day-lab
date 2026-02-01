@@ -284,3 +284,23 @@ Implement a minimal, correct alerting pipeline and define paging philosophy.
 ### Snapshot Checkpoint
 - Snapshot: post-alerting-corrected
 - Purpose: Preserve verified alerting pipeline after Docker networking fix.
+
+## 2026-01-24 — Day 12 — Alert Routing & Notification Hygiene
+
+### Goal
+Implement alert routing and notification hygiene (webhook without spam).
+
+### What I did
+- Implemented Alertmanager routing by severity (`page`, `ticket`, `info`).
+- Added inhibition to suppress lower-severity notifications when a page alert is firing.
+- Configured notification hygiene via grouping and repeat intervals to prevent spam.
+- Implemented a local webhook receiver to log notifications without external credentials.
+- Validated end-to-end: Prometheus → Alertmanager → webhook, including resolved notifications.
+
+### Evidence
+- lab/evidence/2026-01-24_day12_prometheus_alertmanagers.json
+- lab/evidence/2026-01-24_day12_prometheus_alerts_firing.json
+- lab/evidence/2026-01-24_day12_alertmanager_alerts.json
+- lab/evidence/2026-01-24_day12_webhook_notifications_tail.txt
+- lab/evidence/2026-01-24_day12_prometheus_alerts_resolved.json
+- lab/evidence/2026-01-24_day12_alertmanager.yml

@@ -92,3 +92,16 @@ sudo systemctl restart node_exporter
 sudo ss -lntp | grep ':9100'
 sudo journalctl -u node_exporter -n 50 --no-pager
 ```
+
+## Notification Hygiene (Alert Routing)
+
+Alert routing is based on the `severity` label:
+
+- `severity="page"` → webhook page channel (urgent)
+- `severity="ticket"` → webhook ticket channel (non-urgent)
+- `severity="info"` → dropped (no notification)
+
+Spam control:
+- Alerts are grouped by `alertname` + `instance`
+- Repeat notifications are limited via `repeat_interval`
+- Inhibition suppresses `ticket/info` when a `page` alert is firing for the same target
