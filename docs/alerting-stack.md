@@ -211,9 +211,9 @@ and referenced in `admin/PROGRESS-LOG.md`.
 
 Alerting is a baseline capability. Snapshots are taken at milestones:
 
-- **`post-alerting-corrected`
+- `post-alerting-corrected`
   - After Prometheus–Alertmanager wiring fix
-- **`post-notification-hygiene`
+- `post-notification-hygiene`
   - After routing, inhibition, and webhook validation
 
 Snapshots preserve known-good operational states and allow safe iteration.
