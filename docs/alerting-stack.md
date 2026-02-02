@@ -54,19 +54,19 @@ If any of the above are false, the alert should not page.
 
 ### Components
 
-- **Prometheus
+- Prometheus
   - Scrapes metrics from Linux nodes
   - Evaluates alert rules
 
-- **Alertmanager
+- Alertmanager
   - Receives alerts from Prometheus
   - Routes, groups, inhibits, and deduplicates alerts
 
-- **Webhook Receiver
+- Webhook Receiver
   - Local HTTP endpoint for notifications
   - Used instead of email/Slack to avoid credentials and spam
 
-- **Docker Network
+- Docker Network
   - Prometheus and Alertmanager run on the same Docker network
   - Containers reference each other by name (not `localhost`)
 
@@ -83,20 +83,20 @@ They communicate via container DNS on a shared Docker network.
 Alert rules are defined in Prometheus and encode operational intent, not just thresholds.
 
 ### Page-Level Alerts
-- **NodeExporterDown
+- NodeExporterDown
   - Condition: up == 0 for 2 minutes
   - Rationale: exporter absence is a strong proxy for node unreachability
   - Action: investigate node, service, port, firewall
-- **DiskWillFillSoon
+- DiskWillFillSoon
   - Condition: <10% disk free for 10 minutes
   - Rationale: predictive, actionable, time-sensitive
   - Action: cleanup, expand disk, or investigate growth
 
 ### Non-Page Alerts
-- **HighCpuUsage (ticket)
+- HighCpuUsage (ticket)
   - Sustained CPU >85% for 15 minutes
   - Informational unless correlated with impact
-- **NodeRebooted (info)
+- NodeRebooted (info)
   - Contextual signal for operators
   - Never pages
 
@@ -140,7 +140,7 @@ This prevents redundant noise during active incidents.
 
 ### Behavior
 
-- **Alertmanager sends POST requests to:
+- Alertmanager sends POST requests to:
   - `/page` for page alerts
   - `/ticket` for ticket alerts
   - Payloads are logged to a file for audit and verification
@@ -181,7 +181,7 @@ The alerting stack is validated using a controlled failure drill:
 
 ### Correction
 - Attach Prometheus and Alertmanager to the same Docker network
-- Reference Alertmanager by container name (alertmanager:9093)
+- Reference Alertmanager by container name (`alertmanager:9093`)
 
 This correction is documented and validated in evidence.
 
