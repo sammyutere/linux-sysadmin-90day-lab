@@ -55,20 +55,20 @@ If any of the above are false, the alert should not page.
 ### Components
 
 - **Prometheus
-- Scrapes metrics from Linux nodes
-- Evaluates alert rules
+  - Scrapes metrics from Linux nodes
+  - Evaluates alert rules
 
 - **Alertmanager
-- Receives alerts from Prometheus
-- Routes, groups, inhibits, and deduplicates alerts
+  - Receives alerts from Prometheus
+  - Routes, groups, inhibits, and deduplicates alerts
 
 - **Webhook Receiver
-- Local HTTP endpoint for notifications
-- Used instead of email/Slack to avoid credentials and spam
+  - Local HTTP endpoint for notifications
+  - Used instead of email/Slack to avoid credentials and spam
 
 - **Docker Network
-- Prometheus and Alertmanager run on the same Docker network
-- Containers reference each other by name (not `localhost`)
+  - Prometheus and Alertmanager run on the same Docker network
+  - Containers reference each other by name (not `localhost`)
 
 ### Key Design Decision
 
@@ -84,21 +84,21 @@ Alert rules are defined in Prometheus and encode operational intent, not just th
 
 ### Page-Level Alerts
 - **NodeExporterDown
-- Condition: up == 0 for 2 minutes
-- Rationale: exporter absence is a strong proxy for node unreachability
-- Action: investigate node, service, port, firewall
+  - Condition: up == 0 for 2 minutes
+  - Rationale: exporter absence is a strong proxy for node unreachability
+  - Action: investigate node, service, port, firewall
 - **DiskWillFillSoon
-- Condition: <10% disk free for 10 minutes
-- Rationale: predictive, actionable, time-sensitive
-- Action: cleanup, expand disk, or investigate growth
+  - Condition: <10% disk free for 10 minutes
+  - Rationale: predictive, actionable, time-sensitive
+  - Action: cleanup, expand disk, or investigate growth
 
 ### Non-Page Alerts
 - **HighCpuUsage (ticket)
-- Sustained CPU >85% for 15 minutes
-- Informational unless correlated with impact
+  - Sustained CPU >85% for 15 minutes
+  - Informational unless correlated with impact
 - **NodeRebooted (info)
-- Contextual signal for operators
-- Never pages
+  - Contextual signal for operators
+  - Never pages
 
 ---
 
@@ -141,10 +141,10 @@ This prevents redundant noise during active incidents.
 ### Behavior
 
 - **Alertmanager sends POST requests to:
-- `/page` for page alerts
-- `/ticket` for ticket alerts
-- Payloads are logged to a file for audit and verification
-- Resolved notifications are enabled (`send_resolved: true`)
+  - `/page` for page alerts
+  - `/ticket` for ticket alerts
+  - Payloads are logged to a file for audit and verification
+  - Resolved notifications are enabled (`send_resolved: true`)
 
 ---
 
@@ -212,9 +212,9 @@ and referenced in `admin/PROGRESS-LOG.md`.
 Alerting is a baseline capability. Snapshots are taken at milestones:
 
 - **`post-alerting-corrected`
-- After Prometheus–Alertmanager wiring fix
+  - After Prometheus–Alertmanager wiring fix
 - **`post-notification-hygiene`
-- After routing, inhibition, and webhook validation
+  - After routing, inhibition, and webhook validation
 
 Snapshots preserve known-good operational states and allow safe iteration.
 
