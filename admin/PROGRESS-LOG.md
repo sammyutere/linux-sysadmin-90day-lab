@@ -304,3 +304,7 @@ Implement alert routing and notification hygiene (webhook without spam).
 - lab/evidence/2026-01-24_day12_webhook_notifications_tail.txt
 - lab/evidence/2026-01-24_day12_prometheus_alerts_resolved.json
 - lab/evidence/2026-01-24_day12_alertmanager.yml
+
+### Snapshot Checkpoint
+- Snapshot: post-notification-hygiene
+- Purpose: Preserve verified alert routing + notification hygiene baseline before advanced alert tuning.
