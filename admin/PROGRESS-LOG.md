@@ -296,6 +296,7 @@ Implement alert routing and notification hygiene (webhook without spam).
 - Configured notification hygiene via grouping and repeat intervals to prevent spam.
 - Implemented a local webhook receiver to log notifications without external credentials.
 - Validated end-to-end: Prometheus → Alertmanager → webhook, including resolved notifications.
+- Consolidated alerting design and notification hygiene into docs/alerting-stack.md
 
 ### Evidence
 - lab/evidence/2026-01-24_day12_prometheus_alertmanagers.json
@@ -308,3 +309,4 @@ Implement alert routing and notification hygiene (webhook without spam).
 ### Snapshot Checkpoint
 - Snapshot: post-notification-hygiene
 - Purpose: Preserve verified alert routing + notification hygiene baseline before advanced alert tuning.
+

@@ -21,6 +21,12 @@ documented using production-style artifacts.
 
 ---
 
+## Architecture & Design Documentation
+
+- [Alerting Stack — Design, Implementation, and Operations](docs/alerting-stack.md)
+
+---
+
 ## Start Here (Recommended Navigation)
 
 1. **Lab topology & environment notes:** `admin/LAB-NOTES.md`
@@ -147,6 +153,29 @@ mkdir -p lab/evidence
 vagrant ssh prod-ubuntu -c "hostname; ip -br a" >  lab/evidence/baseline_example.txt
 vagrant ssh infra-rocky -c "hostname; ip -br a" >> lab/evidence/baseline_example.txt
 ```
+
+---
+
+## Runbooks (Operational Procedures)
+
+This repository includes tested, operator-focused runbooks for common failure
+scenarios encountered in Linux infrastructure and monitoring systems.
+
+Runbooks are written to be followed during incidents and focus on:
+- symptom-first troubleshooting
+- ordered checks (service → port → firewall → network)
+- clear decision points
+- minimal, actionable commands
+
+### Available Runbooks
+
+- **Monitoring: node_exporter**
+  - Detection and remediation when metrics are unavailable
+  - Covers service failure, port binding issues, firewall blocks, and recovery
+  - Includes paging philosophy and notification hygiene
+  - Path: `runbooks/monitoring-node-exporter.md`
+
+Additional runbooks are added as new operational scenarios are introduced.
 
 ---
 
