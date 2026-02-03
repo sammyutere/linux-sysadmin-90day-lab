@@ -105,3 +105,16 @@ Spam control:
 - Alerts are grouped by `alertname` + `instance`
 - Repeat notifications are limited via `repeat_interval`
 - Inhibition suppresses `ticket/info` when a `page` alert is firing for the same target
+
+## Planned Maintenance & Silences
+
+Silences are used for **planned maintenance only**.
+Alerts should never be disabled or deleted.
+
+Guidelines:
+- Silence only the specific alert and instance
+- Always include a comment
+- Always set an explicit end time
+- Verify alerts recover after maintenance
+
+Silences are created and audited via the Alertmanager API.

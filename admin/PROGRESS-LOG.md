@@ -310,3 +310,36 @@ Implement alert routing and notification hygiene (webhook without spam).
 - Snapshot: post-notification-hygiene
 - Purpose: Preserve verified alert routing + notification hygiene baseline before advanced alert tuning.
 
+
+## 2026-01-25 — Day 13 — Alert Testing & Silences
+
+### Goal
+Practice alert hygiene during planned maintenance.
+
+### Pre-checks & Environment Issues
+
+- Day 13 tasks could not be executed until Prometheus and Alertmanager containers
+  were running on the host. Alerting API calls and silence creation depend on
+  active Prometheus and Alertmanager services.
+- Prior to starting Day 13, a snapshot restore was attempted using:
+  `vagrant snapshot restore post-alerting-corrected`.
+- Snapshot restore initially failed due to missing VirtualBox shared folders
+  (`vboxsf`), indicating VirtualBox Guest Additions were not available for the
+  running kernel.
+- Resolved by rebuilding VirtualBox Guest Additions for the current kernel.
+- After rebuilding Guest Additions and restarting the VMs, snapshot restore
+  succeeded and Day 13 tasks proceeded normally.
+
+### What I did
+- Triggered a page-level alert intentionally.
+- Created a narrow, time-bound Alertmanager silence.
+- Verified alerts were suppressed without disabling rules.
+- Performed planned service restart.
+- Confirmed alerts resolved cleanly after maintenance.
+
+### Evidence
+- lab/evidence/2026-01-25_day13_alerts_before_silence.json
+- lab/evidence/2026-01-25_day13_silence_created.json
+- lab/evidence/2026-01-25_day13_alerts_silenced.json
+- lab/evidence/2026-01-25_day13_alerts_resolved.json
+- lab/evidence/2026-01-25_day13_silences_inventory.json
