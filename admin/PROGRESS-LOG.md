@@ -343,3 +343,7 @@ Practice alert hygiene during planned maintenance.
 - lab/evidence/2026-01-25_day13_alerts_silenced.json
 - lab/evidence/2026-01-25_day13_alerts_resolved.json
 - lab/evidence/2026-01-25_day13_silences_inventory.json
+
+### Snapshot Checkpoint
+- Snapshot: post-silences-baseline
+- Purpose: Preserve verified alerting and silence hygiene before advanced alert tuning.
