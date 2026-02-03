@@ -25,6 +25,35 @@ This stack is designed for early-stage production environments where correctness
 
 ---
 
+## Operational Prerequisites
+
+## Prerequisites (Before Running Day 13 Tasks)
+
+Before executing Day 13 (Alert Testing & Silences), ensure:
+
+1. **Prometheus and Alertmanager are running**
+   - Prometheus API must be reachable at `http://localhost:9090`
+   - Alertmanager API must be reachable at `http://localhost:9093`
+   - Silences and alert inspection require active services
+
+2. **VirtualBox Guest Additions are functional**
+   - Snapshot restores rely on shared folders (`vboxsf`)
+   - If snapshot restore fails with a `vboxsf` error, Guest Additions must be rebuilt
+     for the currently running kernel before proceeding
+
+
+### Guest Additions Recovery (If Snapshot Restore Fails)
+
+If `vagrant snapshot restore` fails with a `vboxsf` or shared folder error:
+
+- Root cause is typically a kernel update without matching VirtualBox Guest Additions
+- Rebuild Guest Additions for the active kernel
+- Reboot the VM and reattempt snapshot restore
+
+This recovery was required prior to executing Day 13 tasks.
+
+---
+
 ### Alerting Philosophy
 
 ### Severity Levels
