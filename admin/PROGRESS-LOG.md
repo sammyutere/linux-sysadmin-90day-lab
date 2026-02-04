@@ -363,3 +363,7 @@ Practice structured incident documentation and root cause analysis.
 - incidents/2026-02-01-node-exporter-metrics-outage.md
 - incidents/2026-02-01-node-exporter-rca.md
 - incidents/2026-02-01-firewall-change-record.md
+
+### Snapshot Checkpoint
+- Snapshot: post-incident-baseline
+- Purpose: Preserve verified, documented state after incident review.
