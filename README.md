@@ -179,6 +179,21 @@ Additional runbooks are added as new operational scenarios are introduced.
 
 ---
 
+## Incidents & Postmortems
+
+This repository includes blameless postmortems, root cause analyses (RCA),
+and change records for incidents encountered during lab execution.
+
+These documents focus on:
+- root cause identification
+- impact assessment
+- remediation and prevention
+- operational learning
+
+Artifacts are stored under the `incidents/` directory.
+
+---
+
 ## Assumptions and Constraints
 
 The following assumptions and constraints apply to all labs and documentation in this repository. They are explicitly documented to ensure reproducibility and to avoid implicit dependencies.

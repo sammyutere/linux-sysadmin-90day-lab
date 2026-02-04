@@ -347,3 +347,19 @@ Practice alert hygiene during planned maintenance.
 ### Snapshot Checkpoint
 - Snapshot: post-silences-baseline
 - Purpose: Preserve verified alerting and silence hygiene before advanced alert tuning.
+
+## 2026-02-01 — Day 14 — Incident Review & Postmortem
+
+### Goal
+Practice structured incident documentation and root cause analysis.
+
+### What I did
+- Documented a real monitoring incident as a blameless postmortem.
+- Produced a focused RCA separating symptom and root cause.
+- Created a change record detailing remediation and validation.
+- Linked findings back to runbooks and prevention.
+
+### Artifacts
+- incidents/2026-02-01-node-exporter-metrics-outage.md
+- incidents/2026-02-01-node-exporter-rca.md
+- incidents/2026-02-01-firewall-change-record.md
