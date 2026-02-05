@@ -383,3 +383,7 @@ Practice structured change planning, execution, validation, and rollback readine
 ### Artifacts
 - incidents/2026-02-02-node-exporter-hardening-change.md
 - lab/evidence/2026-02-02_day15_prometheus_targets.json
+
+### Snapshot Checkpoint
+- Snapshot: post-node-exporter-hardening
+- Purpose: Preserve validated state after controlled service hardening.
