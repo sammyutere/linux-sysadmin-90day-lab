@@ -367,3 +367,19 @@ Practice structured incident documentation and root cause analysis.
 ### Snapshot Checkpoint
 - Snapshot: post-incident-baseline
 - Purpose: Preserve verified, documented state after incident review.
+
+## 2026-02-02 — Day 15 — Change Management & Controlled Deployment
+
+### Goal
+Practice structured change planning, execution, validation, and rollback readiness.
+
+### What I did
+- Created a pre-change snapshot.
+- Documented a formal change record with risk and rollback plan.
+- Applied systemd hardening using a drop-in override.
+- Validated service health and monitoring continuity.
+- Recorded outcome and validation results.
+
+### Artifacts
+- incidents/2026-02-02-node-exporter-hardening-change.md
+- lab/evidence/2026-02-02_day15_prometheus_targets.json
