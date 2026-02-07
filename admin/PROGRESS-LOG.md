@@ -429,3 +429,7 @@ Validate Day 16 capacity assumptions using controlled CPU load.
 - lab/evidence/2026-02-04_day17_alerts_during_load.json
 - lab/evidence/2026-02-04_day17_evidence_index.txt
 - docs/load-test-assessment.md
+
+### Snapshot Checkpoint
+- Snapshot: post-load-test
+- Purpose: Preserve stable state after validated load testing.
