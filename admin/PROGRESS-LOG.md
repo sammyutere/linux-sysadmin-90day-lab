@@ -409,3 +409,23 @@ Perform trend-based capacity assessment using Prometheus metrics.
 ### Snapshot Checkpoint
 - Snapshot: post-capacity-assessment
 - Purpose: Preserve baseline after documented capacity analysis.
+
+## 2026-02-04 — Day 17 — Load Testing & Capacity Validation
+
+### Goal
+Validate Day 16 capacity assumptions using controlled CPU load.
+
+### What I did
+- Took pre-load snapshot to preserve baseline.
+- Generated sustained CPU load using stress-ng.
+- Observed Prometheus metrics during and after load.
+- Verified alert thresholds did not page unnecessarily.
+- Documented load test results and conclusions.
+
+### Artifacts
+- lab/evidence/2026-02-04_day17_idle_cpu.json
+- lab/evidence/2026-02-04_day17_loaded_cpu.json
+- lab/evidence/2026-02-04_day17_post_load_cpu.json
+- lab/evidence/2026-02-04_day17_alerts_during_load.json
+- lab/evidence/2026-02-04_day17_evidence_index.txt
+- docs/load-test-assessment.md

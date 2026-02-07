@@ -1,0 +1,1 @@
+{"status":"success","data":{"alerts":[{"labels":{"alertname":"HighCpuUsage","instance":"10.168.56.10:9100","severity":"ticket"},"annotations":{"description":"CPU >85% for 15m. Check top processes, load, and whether there is user impact.","summary":"High CPU on 10.168.56.10:9100"},"state":"pending","activeAt":"2026-02-07T23:17:33.654174242Z","value":"9.999824424023006e+01"}]}}

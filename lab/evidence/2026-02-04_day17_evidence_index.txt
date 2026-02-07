@@ -1,0 +1,4 @@
+-rw-r--r--  1 macos  staff   378B  7 Feb 23:22 lab/evidence/2026-02-04_day17_alerts_during_load.json
+-rw-r--r--  1 macos  staff   153B  7 Feb 23:11 lab/evidence/2026-02-04_day17_idle_cpu.json
+-rw-r--r--  1 macos  staff   454B  7 Feb 23:21 lab/evidence/2026-02-04_day17_loaded_cpu.json
+-rw-r--r--  1 macos  staff   458B  7 Feb 23:32 lab/evidence/2026-02-04_day17_post_load_cpu.json
