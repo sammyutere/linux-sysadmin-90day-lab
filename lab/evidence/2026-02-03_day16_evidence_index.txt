@@ -1,0 +1,2 @@
+-rw-r--r--  1 macos  staff   725B  7 Feb 00:22 lab/evidence/2026-02-03_day16_cpu_trend_raw.json
+-rw-r--r--  1 macos  staff   2.9K  7 Feb 00:23 lab/evidence/2026-02-03_day16_disk_trend_raw.json

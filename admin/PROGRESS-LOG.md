@@ -387,3 +387,21 @@ Practice structured change planning, execution, validation, and rollback readine
 ### Snapshot Checkpoint
 - Snapshot: post-node-exporter-hardening
 - Purpose: Preserve validated state after controlled service hardening.
+
+## 2026-02-03 — Day 16 — Capacity Planning from Metrics
+
+### Goal
+Perform trend-based capacity assessment using Prometheus metrics.
+
+### What I did
+- Installed required host tooling (`jq`, GNU `gdate`) for macOS compatibility.
+- Confirmed Prometheus target health.
+- Extracted CPU and disk utilization trends using URL-encoded PromQL queries.
+- Analyzed trend vs spike behavior.
+- Documented capacity assessment with assumptions and recommendations.
+
+### Artifacts
+- lab/evidence/2026-02-03_day16_cpu_trend_raw.json
+- lab/evidence/2026-02-03_day16_disk_trend_raw.json
+- lab/evidence/2026-02-03_day16_evidence_index.txt
+- docs/capacity-assessment.md
