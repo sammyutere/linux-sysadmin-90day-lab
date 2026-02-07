@@ -405,3 +405,7 @@ Perform trend-based capacity assessment using Prometheus metrics.
 - lab/evidence/2026-02-03_day16_disk_trend_raw.json
 - lab/evidence/2026-02-03_day16_evidence_index.txt
 - docs/capacity-assessment.md
+
+### Snapshot Checkpoint
+- Snapshot: post-capacity-assessment
+- Purpose: Preserve baseline after documented capacity analysis.
