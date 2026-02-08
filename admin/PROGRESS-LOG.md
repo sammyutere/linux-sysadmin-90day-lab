@@ -453,3 +453,7 @@ Validate system behavior under controlled memory pressure.
 - lab/evidence/2026-02-05_day18_alerts_during_memory_test.json
 - lab/evidence/2026-02-05_day18_evidence_index.txt
 - docs/memory-pressure-assessment.md
+
+### Snapshot Checkpoint
+- Snapshot: post-memory-test
+- Purpose: Preserve stable state after memory pressure validation.
