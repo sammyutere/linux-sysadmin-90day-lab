@@ -1,0 +1,4 @@
+-rw-r--r--  1 macos  staff    41B  8 Feb 14:40 lab/evidence/2026-02-06_day19_alerts_during_disk_test.json
+-rw-r--r--  1 macos  staff   697B  8 Feb 14:29 lab/evidence/2026-02-06_day19_idle_disk.json
+-rw-r--r--  1 macos  staff   1.3K  8 Feb 14:37 lab/evidence/2026-02-06_day19_loaded_disk.json
+-rw-r--r--  1 macos  staff   2.0K  8 Feb 14:48 lab/evidence/2026-02-06_day19_post_disk.json

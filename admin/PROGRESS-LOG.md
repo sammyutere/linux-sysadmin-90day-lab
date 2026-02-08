@@ -457,3 +457,23 @@ Validate system behavior under controlled memory pressure.
 ### Snapshot Checkpoint
 - Snapshot: post-memory-test
 - Purpose: Preserve stable state after memory pressure validation.
+
+## 2026-02-06 — Day 19 — Disk I/O Stress Testing
+
+### Goal
+Validate filesystem and disk behavior under controlled I/O load.
+
+### What I did
+- Took pre-test snapshot to preserve baseline.
+- Generated controlled disk I/O using fio.
+- Observed Prometheus disk metrics during and after stress.
+- Verified alerts did not page unnecessarily.
+- Documented disk I/O assessment and recommendations.
+
+### Artifacts
+- lab/evidence/2026-02-06_day19_idle_disk.json
+- lab/evidence/2026-02-06_day19_loaded_disk.json
+- lab/evidence/2026-02-06_day19_post_disk.json
+- lab/evidence/2026-02-06_day19_alerts_during_disk_test.json
+- lab/evidence/2026-02-06_day19_evidence_index.txt
+- docs/disk-io-assessment.md
