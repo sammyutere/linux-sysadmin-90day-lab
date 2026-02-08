@@ -1,0 +1,4 @@
+-rw-r--r--  1 macos  staff   742B  8 Feb 00:08 lab/evidence/2026-02-05_day18_alerts_during_memory_test.json
+-rw-r--r--  1 macos  staff   1.1K  8 Feb 00:02 lab/evidence/2026-02-05_day18_idle_memory.json
+-rw-r--r--  1 macos  staff   604B  8 Feb 00:07 lab/evidence/2026-02-05_day18_loaded_memory.json
+-rw-r--r--  1 macos  staff   935B  8 Feb 00:38 lab/evidence/2026-02-05_day18_post_memory.json

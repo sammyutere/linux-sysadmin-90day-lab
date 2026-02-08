@@ -433,3 +433,23 @@ Validate Day 16 capacity assumptions using controlled CPU load.
 ### Snapshot Checkpoint
 - Snapshot: post-load-test
 - Purpose: Preserve stable state after validated load testing.
+
+## 2026-02-05 — Day 18 — Memory Pressure Testing
+
+### Goal
+Validate system behavior under controlled memory pressure.
+
+### What I did
+- Took pre-test snapshot to preserve baseline.
+- Applied controlled memory pressure using stress-ng.
+- Observed Prometheus memory metrics during and after pressure.
+- Verified alert thresholds did not page unexpectedly.
+- Documented memory capacity assessment and recommendations.
+
+### Artifacts
+- lab/evidence/2026-02-05_day18_idle_memory.json
+- lab/evidence/2026-02-05_day18_loaded_memory.json
+- lab/evidence/2026-02-05_day18_post_memory.json
+- lab/evidence/2026-02-05_day18_alerts_during_memory_test.json
+- lab/evidence/2026-02-05_day18_evidence_index.txt
+- docs/memory-pressure-assessment.md
