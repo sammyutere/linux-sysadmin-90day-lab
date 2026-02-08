@@ -1,0 +1,5 @@
+-rw-r--r--  1 macos  staff   391B  8 Feb 21:13 lab/evidence/2026-02-07_day20_alerts_during_network_test.json
+-rw-r--r--  1 macos  staff   823B  8 Feb 21:05 lab/evidence/2026-02-07_day20_baseline_ping.txt
+-rw-r--r--  1 macos  staff   811B  8 Feb 21:08 lab/evidence/2026-02-07_day20_latency_ping.txt
+-rw-r--r--  1 macos  staff   1.3K  8 Feb 21:12 lab/evidence/2026-02-07_day20_loss_ping.txt
+-rw-r--r--  1 macos  staff   822B  8 Feb 21:15 lab/evidence/2026-02-07_day20_recovery_ping.txt

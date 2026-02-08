@@ -481,3 +481,25 @@ Validate filesystem and disk behavior under controlled I/O load.
 ### Snapshot Checkpoint
 - Snapshot: post-disk-io-test
 - Purpose: Preserve stable state after disk I/O validation.
+
+## 2026-02-07 — Day 20 — Network Latency & Packet Loss Testing
+
+### Goal
+Validate system behavior under controlled network impairment.
+
+### What I did
+- Took pre-test snapshot to preserve baseline.
+- Introduced latency and packet loss using tc/netem.
+- Observed impact via ping and Prometheus.
+- Verified no inappropriate paging.
+- Restored normal network behavior and confirmed recovery.
+- Documented network assessment and recommendations.
+
+### Artifacts
+- lab/evidence/2026-02-07_day20_baseline_ping.txt
+- lab/evidence/2026-02-07_day20_latency_ping.txt
+- lab/evidence/2026-02-07_day20_loss_ping.txt
+- lab/evidence/2026-02-07_day20_recovery_ping.txt
+- lab/evidence/2026-02-07_day20_alerts_during_network_test.json
+- lab/evidence/2026-02-07_day20_evidence_index.txt
+- docs/network-assessment.md
