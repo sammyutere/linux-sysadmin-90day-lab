@@ -503,3 +503,7 @@ Validate system behavior under controlled network impairment.
 - lab/evidence/2026-02-07_day20_alerts_during_network_test.json
 - lab/evidence/2026-02-07_day20_evidence_index.txt
 - docs/network-assessment.md
+
+### Snapshot Checkpoint
+- Snapshot: post-network-test
+- Purpose: Preserve stable state after network impairment validation.
