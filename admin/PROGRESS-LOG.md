@@ -477,3 +477,7 @@ Validate filesystem and disk behavior under controlled I/O load.
 - lab/evidence/2026-02-06_day19_alerts_during_disk_test.json
 - lab/evidence/2026-02-06_day19_evidence_index.txt
 - docs/disk-io-assessment.md
+
+### Snapshot Checkpoint
+- Snapshot: post-disk-io-test
+- Purpose: Preserve stable state after disk I/O validation.
