@@ -523,3 +523,7 @@ Define service reliability objectives using existing monitoring data.
 - lab/evidence/2026-02-08_day21_sli_raw.json
 - lab/evidence/2026-02-08_day21_evidence_index.txt
 - docs/slo-monitoring.md
+
+### Snapshot Checkpoint
+- Snapshot: post-slo-definition
+- Purpose: Preserve baseline after SLO and error budget definition.
