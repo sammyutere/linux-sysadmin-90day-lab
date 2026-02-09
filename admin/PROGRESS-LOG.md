@@ -507,3 +507,19 @@ Validate system behavior under controlled network impairment.
 ### Snapshot Checkpoint
 - Snapshot: post-network-test
 - Purpose: Preserve stable state after network impairment validation.
+
+## 2026-02-08 — Day 21 — SLOs & Error Budgets
+
+### Goal
+Define service reliability objectives using existing monitoring data.
+
+### What I did
+- Defined service scope and availability indicator.
+- Established a 99.9% SLO and calculated error budget.
+- Queried Prometheus to validate availability data.
+- Documented alerting and change policy tied to error budget.
+
+### Artifacts
+- lab/evidence/2026-02-08_day21_sli_raw.json
+- lab/evidence/2026-02-08_day21_evidence_index.txt
+- docs/slo-monitoring.md
