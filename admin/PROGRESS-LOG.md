@@ -547,3 +547,7 @@ Implement SLO-driven burn-rate alerts and validate end-to-end routing.
 - lab/evidence/2026-02-09_day22_prometheus_alerts_firing.json
 - lab/evidence/2026-02-09_day22_alertmanager_alerts.json
 - docs/slo-monitoring.md
+
+### Snapshot Checkpoint
+- Snapshot: post-burn-rate-alerts
+- Purpose: Preserve baseline after SLO burn-rate alerting was implemented and validated.
