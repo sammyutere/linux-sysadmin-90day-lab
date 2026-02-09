@@ -527,3 +527,23 @@ Define service reliability objectives using existing monitoring data.
 ### Snapshot Checkpoint
 - Snapshot: post-slo-definition
 - Purpose: Preserve baseline after SLO and error budget definition.
+
+## 2026-02-09 — Day 22 — Error Budget Burn-Rate Alerts
+
+### Goal
+Implement SLO-driven burn-rate alerts and validate end-to-end routing.
+
+### What I did
+- Added a dedicated Prometheus rule group for SLO burn-rate alerting.
+- Loaded new rules and verified they were active in Prometheus.
+- Validated Prometheus→Alertmanager connectivity.
+- Induced availability loss by stopping node_exporter and observed burn-rate alert firing.
+- Linked burn-rate alerting policy back to SLO documentation.
+
+### Artifacts
+- monitoring/prometheus/slo_alert_rules.yml
+- lab/evidence/2026-02-09_day22_prometheus_rules.json
+- lab/evidence/2026-02-09_day22_prometheus_alertmanagers.json
+- lab/evidence/2026-02-09_day22_prometheus_alerts_firing.json
+- lab/evidence/2026-02-09_day22_alertmanager_alerts.json
+- docs/slo-monitoring.md

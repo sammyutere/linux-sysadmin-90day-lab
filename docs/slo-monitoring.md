@@ -27,3 +27,12 @@ Percentage of successful scrapes (`up{job="node"}`).
 - Investigate reliability regressions.
 - Revisit alert sensitivity.
 
+
+## Burn-Rate Alerting
+
+This project uses burn-rate alerts based on scrape availability (`up{job="node"}`):
+
+- **Fast burn (page):** short-window reliability drop that risks exhausting budget quickly
+- **Slow burn (ticket):** longer-window degradation requiring investigation without paging
+
+Burn-rate alerts are intended to reduce noise and keep alerting aligned with SLO impact.
