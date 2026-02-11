@@ -576,3 +576,23 @@ Improve alert quality by reducing false positives.
 ### Snapshot Checkpoint
 - Snapshot: post-alert-tuning
 - Purpose: Preserve tuned alerting baseline after noise reduction.
+
+## 2026-02-12 — Day 24 — Alert Correlation & Signal Deduplication
+
+### Goal
+Reduce duplicate paging by correlating alerts across signals.
+
+### What I did
+- Defined primary vs secondary alert signals.
+- Added grouping and inhibition rules to Alertmanager.
+- Restarted Alertmanager and validated configuration.
+- Ran a controlled outage drill and observed correlated alerts.
+- Documented correlation logic and outcomes.
+
+### Artifacts
+- monitoring/alertmanager/alertmanager.yml
+- lab/evidence/2026-02-12_day24_initial_alerts.json
+- lab/evidence/2026-02-12_day24_prometheus_alerts_correlated.json
+- lab/evidence/2026-02-12_day24_alertmanager_grouped_alerts.json
+- lab/evidence/2026-02-12_day24_evidence_index.txt
+- docs/alert-correlation.md
