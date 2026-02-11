@@ -588,6 +588,7 @@ Reduce duplicate paging by correlating alerts across signals.
 - Restarted Alertmanager and validated configuration.
 - Ran a controlled outage drill and observed correlated alerts.
 - Documented correlation logic and outcomes.
+- Verified Alertmanager routing and grouping behavior (see docs/alert-correlation.md).
 
 ### Artifacts
 - monitoring/alertmanager/alertmanager.yml
