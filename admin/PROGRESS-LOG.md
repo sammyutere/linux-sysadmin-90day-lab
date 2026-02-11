@@ -572,3 +572,7 @@ Improve alert quality by reducing false positives.
 - lab/evidence/2026-02-10_day23_alerts_transient_test.json
 - lab/evidence/2026-02-10_day23_evidence_index.txt
 - docs/alert-tuning.md
+
+### Snapshot Checkpoint
+- Snapshot: post-alert-tuning
+- Purpose: Preserve tuned alerting baseline after noise reduction.
