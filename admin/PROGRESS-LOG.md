@@ -597,3 +597,7 @@ Reduce duplicate paging by correlating alerts across signals.
 - lab/evidence/2026-02-12_day24_alertmanager_grouped_alerts.json
 - lab/evidence/2026-02-12_day24_evidence_index.txt
 - docs/alert-correlation.md
+
+### Snapshot Checkpoint
+- Snapshot: post-alert-correlation
+- Purpose: Preserve baseline after alert correlation and inhibition tuning.
