@@ -1,0 +1,4 @@
+-rw-r--r--  1 macos  staff   1.2K 11 Feb 00:12 lab/evidence/2026-02-10_day23_alerts_transient_test.json
+-rw-r--r--  1 macos  staff    41B 10 Feb 23:55 lab/evidence/2026-02-10_day23_current_alerts.json
+-rw-r--r--  1 macos  staff   2.3K 10 Feb 23:54 lab/evidence/2026-02-10_day23_prometheus_rules.json
+-rw-r--r--  1 macos  staff   2.3K 10 Feb 23:59 lab/evidence/2026-02-10_day23_prometheus_rules_tuned.json

@@ -551,3 +551,24 @@ Implement SLO-driven burn-rate alerts and validate end-to-end routing.
 ### Snapshot Checkpoint
 - Snapshot: post-burn-rate-alerts
 - Purpose: Preserve baseline after SLO burn-rate alerting was implemented and validated.
+
+## 2026-02-10 — Day 23 — Alert Tuning & Noise Reduction
+
+### Goal
+Improve alert quality by reducing false positives.
+
+### What I did
+- Audited existing alert rules and observed noise from prior drills.
+- Tuned alert durations and thresholds to reduce paging.
+- Reloaded Prometheus and validated updated rules.
+- Performed transient failure drill to confirm noise reduction.
+- Documented alert tuning rationale.
+
+### Artifacts
+- monitoring/prometheus/alert_rules.yml
+- monitoring/prometheus/slo_alert_rules.yml
+- lab/evidence/2026-02-10_day23_prometheus_rules.json
+- lab/evidence/2026-02-10_day23_prometheus_rules_tuned.json
+- lab/evidence/2026-02-10_day23_alerts_transient_test.json
+- lab/evidence/2026-02-10_day23_evidence_index.txt
+- docs/alert-tuning.md

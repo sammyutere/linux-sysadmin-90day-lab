@@ -8,7 +8,7 @@ groups:
       - alert: SLOBurnRateFast
         expr: |
           (1 - avg_over_time(up{job="node"}[5m])) > 0.02
-        for: 5m
+        for: 10m   # increased from 5m to reduce false fast-burn pages
         labels:
           severity: page
         annotations:
