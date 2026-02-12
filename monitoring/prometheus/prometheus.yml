@@ -10,6 +10,7 @@ alerting:
 rule_files:
   - "alert_rules.yml"
   - "slo_alert_rules.yml"
+  - "anomaly_rules.yml"
 
 scrape_configs:
   - job_name: "node"

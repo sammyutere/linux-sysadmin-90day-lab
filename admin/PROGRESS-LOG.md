@@ -601,3 +601,23 @@ Reduce duplicate paging by correlating alerts across signals.
 ### Snapshot Checkpoint
 - Snapshot: post-alert-correlation
 - Purpose: Preserve baseline after alert correlation and inhibition tuning.
+
+## 2026-02-13 — Day 25 — CPU Anomaly Detection
+
+### Goal
+Implement statistical deviation-based monitoring.
+
+### What I did
+- Queried 1-hour CPU baseline.
+- Created anomaly detection alert rule.
+- Restarted Prometheus and validated rule load.
+- Induced sustained CPU deviation.
+- Captured anomaly alert evidence.
+- Documented detection logic.
+
+### Artifacts
+- monitoring/prometheus/anomaly_rules.yml
+- docs/anomaly-detection.md
+- lab/evidence/2026-02-13_day25_cpu_baseline.json
+- lab/evidence/2026-02-13_day25_cpu_anomaly_alert.json
+- lab/evidence/2026-02-13_day25_rules_loaded.json

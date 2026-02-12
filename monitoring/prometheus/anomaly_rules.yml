@@ -1,0 +1,19 @@
+groups:
+  - name: cpu-anomaly
+    rules:
+      - alert: CPUIdleAnomaly
+        expr: |
+          abs(
+            avg(rate(node_cpu_seconds_total{mode="idle"}[5m])) by (instance)
+            -
+            avg_over_time(
+              avg(rate(node_cpu_seconds_total{mode="idle"}[5m])) by (instance)[1h:]
+            )
+          ) > 0.15
+        for: 10m
+        labels:
+          severity: ticket
+        annotations:
+          summary: "CPU idle anomaly detected"
+          description: "CPU idle deviated significantly from 1-hour historical baseline."
+
