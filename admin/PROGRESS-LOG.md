@@ -621,3 +621,7 @@ Implement statistical deviation-based monitoring.
 - lab/evidence/2026-02-13_day25_cpu_baseline.json
 - lab/evidence/2026-02-13_day25_cpu_anomaly_alert.json
 - lab/evidence/2026-02-13_day25_rules_loaded.json
+
+### Snapshot Checkpoint
+- Snapshot: post-anomaly-detection
+- Purpose: Preserve anomaly alerting baseline after validation.
