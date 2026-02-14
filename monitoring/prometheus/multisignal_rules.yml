@@ -1,0 +1,18 @@
+groups:
+  - name: multisignal-anomaly
+    rules:
+      - alert: MultiSignalDegradation
+        expr: |
+          (abs(
+            avg(rate(node_cpu_seconds_total{mode="idle"}[5m])) by (instance)
+            - avg_over_time(avg(rate(node_cpu_seconds_total{mode="idle"}[5m])) by (instance)[1h:])
+          ) > 0.15)
+          and on(instance)
+          ((1 - (node_filesystem_avail_bytes{fstype!~"tmpfs|overlay"} / node_filesystem_size_bytes{fstype!~"tmpfs|overlay"})) > 0.85)
+        for: 10m
+        labels:
+          severity: page
+        annotations:
+          summary: "Multi-signal system degradation"
+          description: "CPU idle deviation and high disk utilization detected simultaneously for the same instance."
+

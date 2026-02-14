@@ -625,3 +625,22 @@ Implement statistical deviation-based monitoring.
 ### Snapshot Checkpoint
 - Snapshot: post-anomaly-detection
 - Purpose: Preserve anomaly alerting baseline after validation.
+
+## 2026-02-14 — Day 26 — Multi-Signal Anomaly Correlation
+
+### Goal
+Detect systemic degradation using correlated anomaly signals.
+
+### What I did
+- Created composite anomaly rule combining CPU deviation and disk pressure.
+- Updated Prometheus rule files and restarted container.
+- Validated rule loading.
+- Induced correlated CPU and disk stress.
+- Captured alert evidence.
+- Documented correlation logic.
+
+### Artifacts
+- monitoring/prometheus/multisignal_rules.yml
+- docs/multisignal-anomaly.md
+- lab/evidence/2026-02-14_day26_rules_loaded.json
+- lab/evidence/2026-02-14_day26_multisignal_alert.json
