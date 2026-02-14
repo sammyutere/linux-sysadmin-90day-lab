@@ -644,3 +644,7 @@ Detect systemic degradation using correlated anomaly signals.
 - docs/multisignal-anomaly.md
 - lab/evidence/2026-02-14_day26_rules_loaded.json
 - lab/evidence/2026-02-14_day26_multisignal_alert.json
+
+### Snapshot Checkpoint
+- Snapshot: post-multisignal-anomaly
+- Purpose: Preserve stable baseline after multi-signal anomaly implementation.
