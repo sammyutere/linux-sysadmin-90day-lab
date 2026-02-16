@@ -648,3 +648,39 @@ Detect systemic degradation using correlated anomaly signals.
 ### Snapshot Checkpoint
 - Snapshot: post-multisignal-anomaly
 - Purpose: Preserve stable baseline after multi-signal anomaly implementation.
+
+## 2026-02-15 — Day 27 — Automated Runbook Triggering
+
+### Goal
+Implement alert-driven remediation workflow.
+
+### What I did
+- Created restart automation script with audit logging.
+- Implemented webhook receiver.
+- Updated Alertmanager routing.
+- Triggered controlled failure.
+- Verified automated restart.
+- Confirmed alert cleared.
+- Documented automation design.
+
+### Artifacts
+- automation/scripts/restart_node_exporter.sh
+- automation/webhook_receiver.py
+- docs/automated-runbook.md
+- lab/evidence/2026-02-15_day27_alert_trigger.json
+- lab/evidence/2026-02-15_day27_alert_cleared.json
+
+### Evidence (Automation Execution)
+- Prometheus alerts after stop:
+  - lab/evidence/2026-02-15_day27_prometheus_alerts_after_stop.json
+- Alertmanager webhook payload proof:
+  - lab/evidence/2026-02-15_day27_alertmanager_payload.json
+- Webhook receiver processing logs:
+  - lab/evidence/2026-02-15_day27_webhook_receiver_log.txt
+- Remediation script execution logs:
+  - lab/evidence/2026-02-15_day27_automation_restart_log.txt
+- infra-rocky service proof:
+  - lab/evidence/2026-02-15_day27_infra-rocky_node_exporter_status_after_automation.txt
+  - lab/evidence/2026-02-15_day27_infra-rocky_node_exporter_journal.txt
+- Prometheus alerts after recovery:
+  - lab/evidence/2026-02-15_day27_prometheus_alerts_after_recovery.json

@@ -1,0 +1,22 @@
+[0;1;32m●[0m node_exporter.service - Prometheus Node Exporter
+     Loaded: loaded (]8;;file://infra-rocky/etc/systemd/system/node_exporter.service/etc/systemd/system/node_exporter.service]8;;; [0;1;32menabled[0m; preset: [0;1;38;5;185mdisabled[0m)
+    Drop-In: /etc/systemd/system/node_exporter.service.d
+             └─]8;;file://infra-rocky/etc/systemd/system/node_exporter.service.d/override.confoverride.conf]8;;
+     Active: [0;1;32mactive (running)[0m since Mon 2026-02-16 23:23:55 UTC; 50s ago
+   Main PID: 7470 (node_exporter)
+      Tasks: 4 (limit: 10663)
+     Memory: 8.0M (peak: 8.4M)
+        CPU: 130ms
+     CGroup: /system.slice/node_exporter.service
+             └─[0;38;5;245m7470 /usr/local/bin/node_exporter[0m
+
+Feb 16 23:23:55 infra-rocky node_exporter[7470]: ts=2026-02-16T23:23:55.852Z caller=node_exporter.go:118 level=info collector=time
+Feb 16 23:23:55 infra-rocky node_exporter[7470]: ts=2026-02-16T23:23:55.852Z caller=node_exporter.go:118 level=info collector=timex
+Feb 16 23:23:55 infra-rocky node_exporter[7470]: ts=2026-02-16T23:23:55.852Z caller=node_exporter.go:118 level=info collector=udp_queues
+Feb 16 23:23:55 infra-rocky node_exporter[7470]: ts=2026-02-16T23:23:55.852Z caller=node_exporter.go:118 level=info collector=uname
+Feb 16 23:23:55 infra-rocky node_exporter[7470]: ts=2026-02-16T23:23:55.852Z caller=node_exporter.go:118 level=info collector=vmstat
+Feb 16 23:23:55 infra-rocky node_exporter[7470]: ts=2026-02-16T23:23:55.853Z caller=node_exporter.go:118 level=info collector=watchdog
+Feb 16 23:23:55 infra-rocky node_exporter[7470]: ts=2026-02-16T23:23:55.853Z caller=node_exporter.go:118 level=info collector=xfs
+Feb 16 23:23:55 infra-rocky node_exporter[7470]: ts=2026-02-16T23:23:55.853Z caller=node_exporter.go:118 level=info collector=zfs
+Feb 16 23:23:55 infra-rocky node_exporter[7470]: ts=2026-02-16T23:23:55.854Z caller=tls_config.go:313 level=info msg="Listening on" address=[::]:9100
+Feb 16 23:23:55 infra-rocky node_exporter[7470]: ts=2026-02-16T23:23:55.854Z caller=tls_config.go:316 level=info msg="TLS is disabled." http2=false address=[::]:9100
