@@ -684,3 +684,7 @@ Implement alert-driven remediation workflow.
   - lab/evidence/2026-02-15_day27_infra-rocky_node_exporter_journal.txt
 - Prometheus alerts after recovery:
   - lab/evidence/2026-02-15_day27_prometheus_alerts_after_recovery.json
+
+### Snapshot Checkpoint
+- Snapshot: post-automation
+- Purpose: Preserve stable automation baseline after validation.
