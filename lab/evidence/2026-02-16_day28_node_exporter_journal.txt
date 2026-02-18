@@ -1,0 +1,25 @@
+[?1h=Feb 18 14:00:55 infra-rocky systemd[1]: Started Prometheus Node Exporter.[m
+Feb 18 14:00:55 infra-rocky node_exporter[5790]: ts=2026-02-18T14:00:55.989Z ca[m[7m>[27m
+Feb 18 14:00:55 infra-rocky node_exporter[5790]: ts=2026-02-18T14:00:55.989Z ca[m[7m>[27m
+Feb 18 14:00:55 infra-rocky node_exporter[5790]: ts=2026-02-18T14:00:55.992Z ca[m[7m>[27m
+Feb 18 14:00:55 infra-rocky node_exporter[5790]: ts=2026-02-18T14:00:55.993Z ca[m[7m>[27m
+Feb 18 14:00:55 infra-rocky node_exporter[5790]: ts=2026-02-18T14:00:55.994Z ca[m[7m>[27m
+Feb 18 14:00:55 infra-rocky node_exporter[5790]: ts=2026-02-18T14:00:55.994Z ca[m[7m>[27m
+Feb 18 14:00:55 infra-rocky node_exporter[5790]: ts=2026-02-18T14:00:55.994Z ca[m[7m>[27m
+Feb 18 14:00:55 infra-rocky node_exporter[5790]: ts=2026-02-18T14:00:55.994Z ca[m[7m>[27m
+Feb 18 14:00:55 infra-rocky node_exporter[5790]: ts=2026-02-18T14:00:55.994Z ca[m[7m>[27m
+Feb 18 14:00:55 infra-rocky node_exporter[5790]: ts=2026-02-18T14:00:55.994Z ca[m[7m>[27m
+Feb 18 14:00:55 infra-rocky node_exporter[5790]: ts=2026-02-18T14:00:55.994Z ca[m[7m>[27m
+Feb 18 14:00:55 infra-rocky node_exporter[5790]: ts=2026-02-18T14:00:55.994Z ca[m[7m>[27m
+Feb 18 14:00:55 infra-rocky node_exporter[5790]: ts=2026-02-18T14:00:55.994Z ca[m[7m>[27m
+Feb 18 14:00:55 infra-rocky node_exporter[5790]: ts=2026-02-18T14:00:55.994Z ca[m[7m>[27m
+Feb 18 14:00:55 infra-rocky node_exporter[5790]: ts=2026-02-18T14:00:55.994Z ca[m[7m>[27m
+Feb 18 14:00:55 infra-rocky node_exporter[5790]: ts=2026-02-18T14:00:55.994Z ca[m[7m>[27m
+Feb 18 14:00:55 infra-rocky node_exporter[5790]: ts=2026-02-18T14:00:55.994Z ca[m[7m>[27m
+Feb 18 14:00:55 infra-rocky node_exporter[5790]: ts=2026-02-18T14:00:55.994Z ca[m[7m>[27m
+Feb 18 14:00:55 infra-rocky node_exporter[5790]: ts=2026-02-18T14:00:55.994Z ca[m[7m>[27m
+Feb 18 14:00:55 infra-rocky node_exporter[5790]: ts=2026-02-18T14:00:55.994Z ca[m[7m>[27m
+Feb 18 14:00:55 infra-rocky node_exporter[5790]: ts=2026-02-18T14:00:55.994Z ca[m[7m>[27m
+Feb 18 14:00:55 infra-rocky node_exporter[5790]: ts=2026-02-18T14:00:55.994Z ca[m[7m>[27m
+[7mlines 1-23[27m[K[KFeb 18 14:00:55 infra-rocky node_exporter[5790]: ts=2026-02-18T14:00:55.994Z ca[m[7m>[27m
+[7mlines 2-24[27m[K[K[?1l>

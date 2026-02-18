@@ -688,3 +688,21 @@ Implement alert-driven remediation workflow.
 ### Snapshot Checkpoint
 - Snapshot: post-automation
 - Purpose: Preserve stable automation baseline after validation.
+
+## 2026-02-16 — Day 28 — Incident Timeline Reconstruction
+
+### Goal
+Reconstruct full incident timeline across monitoring, alerting, and automation layers.
+
+### What I did
+- Mandatory pre-validation of alert pipeline
+- Induced controlled node_exporter failure.
+- Captured alert state transitions.
+- Captured Alertmanager webhook payload.
+- Captured automation execution logs.
+- Extracted systemd journal timestamps.
+- Constructed structured timeline document.
+
+### Artifacts
+- docs/incident-timeline-day28.md
+- lab/evidence/2026-02-16_day28_*

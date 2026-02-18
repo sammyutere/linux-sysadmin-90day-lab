@@ -1,0 +1,7 @@
+-rw-r--r--  1 macos  staff   1.2K 18 Feb 14:37 lab/evidence/2026-02-16_day28_alertmanager_payload.json
+-rw-r--r--  1 macos  staff   1.4K 18 Feb 14:40 lab/evidence/2026-02-16_day28_automation_log.txt
+-rw-r--r--  1 macos  staff    37B 18 Feb 14:25 lab/evidence/2026-02-16_day28_incident_start.txt
+-rw-r--r--  1 macos  staff   2.3K 18 Feb 14:59 lab/evidence/2026-02-16_day28_node_exporter_journal.txt
+-rw-r--r--  1 macos  staff   1.1K 18 Feb 14:35 lab/evidence/2026-02-16_day28_prometheus_alerts_firing.json
+-rw-r--r--  1 macos  staff    41B 18 Feb 15:03 lab/evidence/2026-02-16_day28_prometheus_alerts_resolved.json
+-rw-r--r--  1 macos  staff   2.1K 18 Feb 14:40 lab/evidence/2026-02-16_day28_webhook_log.txt
