@@ -706,3 +706,7 @@ Reconstruct full incident timeline across monitoring, alerting, and automation l
 ### Artifacts
 - docs/incident-timeline-day28.md
 - lab/evidence/2026-02-16_day28_*
+
+### Snapshot Checkpoint
+- Snapshot: post-incident-reconstruction
+- Purpose: Preserve clean baseline after incident validation and documentation.
