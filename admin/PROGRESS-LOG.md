@@ -727,3 +727,23 @@ Implement change gating based on real-time SLO availability.
 - automation/change-gates/slo_guard.sh
 - docs/slo-change-validation.md
 - lab/evidence/2026-02-17_day29_*
+
+
+
+### Snapshot Checkpoint
+- Snapshot: post-day29-change-validation
+- Trigger: Completed SLO-driven change validation lab.
+- Scope: Vagrant VM state for prod-ubuntu and infra-rocky.
+- Purpose: Preserve stable baseline after implementing SLO change gating logic.
+- Expected Restore Outcome:
+  - Both VMs boot successfully.
+  - node_exporter reachable:
+    - prod-ubuntu → http://10.168.56.10:9100/metrics
+    - infra-rocky → http://10.168.56.20:9100/metrics
+  - Prometheus reachable → http://localhost:9090
+  - Alertmanager reachable → http://localhost:9093
+- Notes:
+  - SLO guard script validated.
+  - Change gating logic operational.
+  - No active critical alerts at snapshot time.
+
