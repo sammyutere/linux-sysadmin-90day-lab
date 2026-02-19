@@ -1,0 +1,1 @@
+{"status":"success","data":{"resultType":"vector","result":[{"metric":{"instance":"10.168.56.20:9100","job":"node"},"value":[1771535004.970,"0.835820895522388"]},{"metric":{"instance":"10.168.56.10:9100","job":"node"},"value":[1771535004.970,"0.7727272727272727"]}]}}

@@ -710,3 +710,20 @@ Reconstruct full incident timeline across monitoring, alerting, and automation l
 ### Snapshot Checkpoint
 - Snapshot: post-incident-reconstruction
 - Purpose: Preserve clean baseline after incident validation and documentation.
+
+## 2026-02-17 — Day 29 — SLO-Driven Change Validation
+
+### Goal
+Implement change gating based on real-time SLO availability.
+
+### What I did
+- Queried 30-minute availability.
+- Built gating script enforcing threshold.
+- Simulated outage.
+- Evaluated approval/block behavior.
+- Documented decision process.
+
+### Artifacts
+- automation/change-gates/slo_guard.sh
+- docs/slo-change-validation.md
+- lab/evidence/2026-02-17_day29_*

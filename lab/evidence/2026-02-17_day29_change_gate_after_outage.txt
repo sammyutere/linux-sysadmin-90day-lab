@@ -1,0 +1,1 @@
+2026-02-19T21:22:32Z - BLOCKED: Availability 0.6916666666666667 below threshold 0.995
