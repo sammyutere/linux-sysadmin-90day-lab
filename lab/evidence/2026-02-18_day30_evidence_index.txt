@@ -1,0 +1,4 @@
+-rw-r--r--  1 macos  staff   940B 20 Feb 02:08 lab/evidence/2026-02-18_day30_infra-rocky_metrics_head.txt
+-rw-r--r--  1 macos  staff   940B 20 Feb 02:08 lab/evidence/2026-02-18_day30_prod-ubuntu_metrics_head.txt
+-rw-r--r--  1 macos  staff   4.6K 20 Feb 12:15 lab/evidence/2026-02-18_day30_rules_validation.json
+-rw-r--r--  1 macos  staff    64B 20 Feb 13:32 lab/evidence/2026-02-18_day30_slo_gate_validation.txt

@@ -1,0 +1,20 @@
+# HELP go_gc_duration_seconds A summary of the pause duration of garbage collection cycles.
+# TYPE go_gc_duration_seconds summary
+go_gc_duration_seconds{quantile="0"} 3.4729e-05
+go_gc_duration_seconds{quantile="0.25"} 5.6592e-05
+go_gc_duration_seconds{quantile="0.5"} 7.1512e-05
+go_gc_duration_seconds{quantile="0.75"} 8.9926e-05
+go_gc_duration_seconds{quantile="1"} 0.002771031
+go_gc_duration_seconds_sum 0.011328968
+go_gc_duration_seconds_count 89
+# HELP go_goroutines Number of goroutines that currently exist.
+# TYPE go_goroutines gauge
+go_goroutines 8
+# HELP go_info Information about the Go environment.
+# TYPE go_info gauge
+go_info{version="go1.22.5"} 1
+# HELP go_memstats_alloc_bytes Number of bytes allocated and still in use.
+# TYPE go_memstats_alloc_bytes gauge
+go_memstats_alloc_bytes 1.796256e+06
+# HELP go_memstats_alloc_bytes_total Total number of bytes allocated, even if freed.
+# TYPE go_memstats_alloc_bytes_total counter
