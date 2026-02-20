@@ -747,3 +747,17 @@ Implement change gating based on real-time SLO availability.
   - Change gating logic operational.
   - No active critical alerts at snapshot time.
 
+
+### Snapshot Checkpoint
+- Snapshot: post-day30-finalization
+- Trigger: Completed full architecture validation and documentation.
+- Scope: Full system baseline with monitoring, alerting, automation, and SLO gating.
+- Expected Restore Outcome:
+  - Both VMs boot successfully.
+  - node_exporter reachable on both nodes.
+  - Prometheus and Alertmanager ready.
+  - No active critical alerts.
+- Notes:
+  - System validated end-to-end.
+  - Automation and SLO guard confirmed operational.
+
