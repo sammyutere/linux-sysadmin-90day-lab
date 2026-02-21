@@ -29,7 +29,7 @@ receivers:
 
   - name: "page-receiver"
     webhook_configs:
-      - url: "http://webhook:8080/page"
+      - url: "http://host.docker.internal:8080"
         send_resolved: true
 
   - name: "ticket-receiver"
