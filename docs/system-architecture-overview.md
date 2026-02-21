@@ -34,3 +34,6 @@
 - Error budget awareness
 - Deployment gating
 - Drift detection and remediation
+
+Note: `curl | head` may emit `curl: (23) Failed writing body` because `head` closes the pipe early.
+For clean evidence capture, use `sed -n '1,10p'` instead.
