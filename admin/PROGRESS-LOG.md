@@ -761,3 +761,16 @@ Implement change gating based on real-time SLO availability.
   - System validated end-to-end.
   - Automation and SLO guard confirmed operational.
 
+
+### Snapshot Checkpoint
+- Snapshot: post-day30-finalization
+- Trigger: Starting AWS follow-up project; freezing Linux lab baseline.
+- Scope: Vagrant VM state for prod-ubuntu + infra-rocky.
+- Expected Restore Outcome:
+  - node_exporter reachable:
+    - prod-ubuntu → http://10.168.56.10:9100/metrics
+    - infra-rocky → http://10.168.56.20:9100/metrics
+  - Prometheus → http://localhost:9090
+  - Alertmanager → http://localhost:9093
+- Notes: Final portfolio checkpoint before AWS project begins.
+
